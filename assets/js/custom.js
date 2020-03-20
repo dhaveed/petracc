@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
 
     "use strict";
 
@@ -64,24 +64,24 @@
         var preloader_before = preloader.find('.preloader-before');
 
 
-        var timer = dsnGrid.pageLoad(0, 100, 300, function (val) {
+        var timer = dsnGrid.pageLoad(0, 100, 300, function(val) {
             progress_number.text(val);
             preloader_progress.css('width', val + '%')
         });
 
 
-        wind.on('load', function () {
+        wind.on('load', function() {
 
             clearInterval(timer);
 
             TweenMax.fromTo(preloader_progress, .5, { width: '95%' }, {
                 width: '100%',
-                onUpdate: function () {
+                onUpdate: function() {
                     var f = preloader_progress.width() / preloader_progress.parent().width() * 100;
                     progress_number.text(parseInt(f, 10));
 
                 },
-                onComplete: function () {
+                onComplete: function() {
                     TweenMax.to(preloader_bar, .5, { left: '100%' });
                     TweenMax.to(progress_title, 1, { autoAlpha: 0, y: -100 });
                     TweenMax.to(progress_loading, 1, { autoAlpha: 0, y: 100 });
@@ -89,7 +89,9 @@
 
                     TweenMax.to(preloader_before, 1, { y: '-100%', delay: .7 });
                     TweenMax.to(preloader_after, 1, {
-                        y: '100%', delay: .7, onComplete: function () {
+                        y: '100%',
+                        delay: .7,
+                        onComplete: function() {
                             preloader.addClass('hidden');
                         }
                     });
@@ -186,7 +188,7 @@
             zoom: {
                 enabled: true,
                 duration: 300, // don't foget to change the duration also in CSS
-                opener: function (element) {
+                opener: function(element) {
                     return element.find('img');
                 }
             }
@@ -203,13 +205,13 @@
         const eNextProject = '[data-dsn-footer="project"]';
 
         return {
-            clearControl: function () {
+            clearControl: function() {
                 controller = new ScrollMagic.Controller();
             },
-            isElemntId: function ($id) {
+            isElemntId: function($id) {
                 return document.getElementById($id) !== null;
             },
-            headerProject: function () {
+            headerProject: function() {
                 if ($(eHeaderProject).length <= 0) return false;
                 let heroImg = $('#dsn-hero-parallax-img'),
                     heroTitle = $('#dsn-hero-parallax-title'),
@@ -230,9 +232,7 @@
                 //--> Hero Image Project
                 if (heroImg.length > 0) {
                     let s = heroImg.hasClass('has-top-bottom') ? 1 : 1.08;
-                    parallax.to(heroImg, 1,
-                        { force3D: true, y: '30%', scale: s, }
-                        , 0);
+                    parallax.to(heroImg, 1, { force3D: true, y: '30%', scale: s, }, 0);
 
                 }
 
@@ -278,22 +278,22 @@
 
                 if (parallax._totalDuration <= 0) return false;
                 var parallaxProject = new ScrollMagic.Scene({
-                    triggerElement: eHeaderProject,
-                    triggerHook: 0,
-                    duration: '100%'
-                })
+                        triggerElement: eHeaderProject,
+                        triggerHook: 0,
+                        duration: '100%'
+                    })
                     .setTween(parallax)
                     .addTo(controller);
 
                 let video = heroImg.find('video');
                 if (video.length > 0 || body.hasClass('v-light')) {
-                    parallaxProject.on('enter', function () {
+                    parallaxProject.on('enter', function() {
                         if (video.length > 0)
                             video.get(0).play();
                         if (body.hasClass('v-light') && !$(eHeaderProject).hasClass('header-hero-2'))
                             body.removeClass('menu-light');
                     });
-                    parallaxProject.on('leave', function () {
+                    parallaxProject.on('leave', function() {
                         if (video.length > 0)
                             video.get(0).pause();
                         if (body.hasClass('v-light') && !$(eHeaderProject).hasClass('header-hero-2'))
@@ -304,7 +304,7 @@
 
                 return parallaxProject;
             },
-            nextProject: function () {
+            nextProject: function() {
 
                 let footerImg = $('#dsn-next-parallax-img'),
                     footerTitle = $('#dsn-next-parallax-title');
@@ -312,13 +312,13 @@
                 let img = footImg();
                 let title = footTitle();
 
-                effectScroll.getListener(function (e) {
+                effectScroll.getListener(function(e) {
                     if (img !== false) img.refresh();
                     if (title !== false) title.refresh();
                 });
 
                 if (title !== false && body.hasClass('v-light')) {
-                    title.on('progress', function (event) {
+                    title.on('progress', function(event) {
                         if (event.progress > 0.8) {
                             body.removeClass('menu-light');
                         } else {
@@ -333,18 +333,16 @@
                     if (footerImg.length <= 0) return false;
 
                     return new ScrollMagic.Scene({
-                        triggerElement: eNextProject,
-                        triggerHook: 1,
-                        duration: '100%'
-                    })
-                        .setTween(TweenMax.to(footerImg, 1,
-                            {
-                                force3D: true,
-                                y: '30%',
-                                scale: 1,
-                                // width : '80%'
-                            }
-                            , 0))
+                            triggerElement: eNextProject,
+                            triggerHook: 1,
+                            duration: '100%'
+                        })
+                        .setTween(TweenMax.to(footerImg, 1, {
+                            force3D: true,
+                            y: '30%',
+                            scale: 1,
+                            // width : '80%'
+                        }, 0))
                         .addTo(controller);
 
 
@@ -354,18 +352,16 @@
                     if (footerTitle.length <= 0) return false;
 
                     return new ScrollMagic.Scene({
-                        triggerElement: eNextProject,
-                        triggerHook: .5,
-                        duration: '55%'
-                    })
-                        .setTween(TweenMax.to(footerTitle, 1,
-                            {
-                                force3D: true,
-                                top: '0%',
-                                opacity: 1,
-                                ease: Power0.easeNone
-                            }
-                            , 0))
+                            triggerElement: eNextProject,
+                            triggerHook: .5,
+                            duration: '55%'
+                        })
+                        .setTween(TweenMax.to(footerTitle, 1, {
+                            force3D: true,
+                            top: '0%',
+                            opacity: 1,
+                            ease: Power0.easeNone
+                        }, 0))
                         .addTo(controller);
 
 
@@ -374,10 +370,10 @@
 
             },
 
-            parallaxImg: function () {
+            parallaxImg: function() {
                 const moveUp = $('[data-dsn-grid="move-up"]');
 
-                moveUp.each(function () {
+                moveUp.each(function() {
                     let _that = $(this);
                     _that.attr('data-dsn-grid', 'moveUp');
                     let img = _that.find('img:not(.hidden) , video');
@@ -409,22 +405,22 @@
 
 
                         var parallaxIt = new ScrollMagic.Scene({
-                            triggerElement: this,
-                            triggerHook: triggerHook,
-                            duration: duration
-                        })
+                                triggerElement: this,
+                                triggerHook: triggerHook,
+                                duration: duration
+                            })
                             .setTween(parallax)
                             .addTo(controller);
 
-                        effectScroll.getListener(function () {
+                        effectScroll.getListener(function() {
                             parallaxIt.refresh();
                         });
                     }
                 });
             },
-            moveSection: function () {
+            moveSection: function() {
                 const moveUp = $('[data-dsn-grid="move-section"]');
-                moveUp.each(function () {
+                moveUp.each(function() {
                     let _that = $(this);
                     _that.removeAttr('data-dsn-grid');
                     _that.addClass('dsn-move-section');
@@ -440,24 +436,24 @@
 
                     let parallax = TweenMax.to(_that, 2, { y: move, autoAlpha: opacity, ease: Power0.easeNone });
                     var parallaxIt = new ScrollMagic.Scene({
-                        triggerElement: this,
-                        triggerHook: triggerHook,
-                        duration: duration
-                    })
+                            triggerElement: this,
+                            triggerHook: triggerHook,
+                            duration: duration
+                        })
                         .setTween(parallax)
                         .addTo(controller);
 
-                    effectScroll.getListener(function () {
+                    effectScroll.getListener(function() {
                         parallaxIt.refresh();
                     });
                 });
             },
-            parallaxImgHover: function () {
+            parallaxImgHover: function() {
                 const parallax = $('[data-dsn="parallax"]');
                 if (parallax.length === 0 || wind.width() < 992) {
                     return;
                 }
-                parallax.each(function () {
+                parallax.each(function() {
                     var _that = $(this),
                         dsn_grid = dsnGrid.removeAttr(_that, 'data-dsn'),
                         speed = dsnGrid.removeAttr(_that, 'data-dsn-speed'),
@@ -471,28 +467,28 @@
 
                 });
             },
-            changeColor: function () {
+            changeColor: function() {
                 const v_b = 'v-light';
                 var isLight = body.hasClass(v_b);
 
-                $('[data-dsn="color"]').each(function () {
+                $('[data-dsn="color"]').each(function() {
 
                     let duration = dsnGrid.getUndefinedVal($(this).data('dsn-duration'), $(this).outerHeight() + 70);
 
                     var parallaxIt = new ScrollMagic.Scene({
-                        triggerElement: this,
-                        triggerHook: 0.05,
-                        duration: duration
-                    })
+                            triggerElement: this,
+                            triggerHook: 0.05,
+                            duration: duration
+                        })
                         .addTo(controller);
 
-                    parallaxIt.on("enter", function () {
+                    parallaxIt.on("enter", function() {
                         if (isLight)
                             body.removeClass(v_b);
                         else
                             body.addClass(v_b);
                     });
-                    parallaxIt.on("leave", function () {
+                    parallaxIt.on("leave", function() {
                         if (isLight)
                             body.addClass(v_b);
                         else
@@ -500,14 +496,14 @@
 
                     });
 
-                    effectScroll.getListener(function () {
+                    effectScroll.getListener(function() {
                         parallaxIt.refresh();
                     });
                 });
             },
-            animateText: function () {
+            animateText: function() {
                 const $element = $('[data-dsn-animate="text"] , [data-dsn-animate="up"]')
-                $element.each(function () {
+                $element.each(function() {
                     let _that = $(this);
                     let triggerHook = 1;
                     if (_that.data('dsn-animate') === 'text') {
@@ -517,41 +513,41 @@
                         triggerHook = 0.8;
 
                     var parallaxIt = new ScrollMagic.Scene({
-                        triggerElement: this,
-                        reverse: false,
-                        triggerHook: triggerHook,
+                            triggerElement: this,
+                            reverse: false,
+                            triggerHook: triggerHook,
 
-                    })
+                        })
                         .setClassToggle(this, 'dsn-active')
                         .addTo(controller);
-                    effectScroll.getListener(function () {
+                    effectScroll.getListener(function() {
                         parallaxIt.refresh();
                     });
                 });
 
             },
-            headerBlog: function () {
+            headerBlog: function() {
                 const header_project = $('[data-dsn-header="blog"]');
                 if (header_project.length <= 0 || wind.width() < 992) return;
 
 
                 var parallaxIt = new ScrollMagic.Scene({
-                    triggerElement: '.header-single-post',
-                    triggerHook: 0,
-                    duration: '100%'
-                })
+                        triggerElement: '.header-single-post',
+                        triggerHook: 0,
+                        duration: '100%'
+                    })
                     .setTween(TweenMax.fromTo(header_project, 1, { width: '100%' }, { width: '80%' }))
                     .addTo(controller);
 
-                effectScroll.getListener(function () {
+                effectScroll.getListener(function() {
                     parallaxIt.refresh();
                 });
             },
-            allInt: function () {
+            allInt: function() {
 
                 this.clearControl();
                 let headProj = this.headerProject();
-                effectScroll.getListener(function (e) {
+                effectScroll.getListener(function(e) {
                     if (headProj !== false) headProj.refresh();
                 });
 
@@ -579,43 +575,45 @@
 
 
         return {
-            isMobile: function () {
-                if (navigator.userAgent.match(/Android/i)
-                    || navigator.userAgent.match(/webOS/i)
-                    || navigator.userAgent.match(/iPhone/i)
-                    || navigator.userAgent.match(/iPad/i)
-                    || navigator.userAgent.match(/iPod/i)
-                    || navigator.userAgent.match(/BlackBerry/i)
-                    || navigator.userAgent.match(/Windows Phone/i)
-                    || navigator.userAgent.match(/Edge/i)
-                    || navigator.userAgent.match(/MSIE 10/i)
-                    || navigator.userAgent.match(/MSIE 9/i)
+            isMobile: function() {
+                if (navigator.userAgent.match(/Android/i) ||
+                    navigator.userAgent.match(/webOS/i) ||
+                    navigator.userAgent.match(/iPhone/i) ||
+                    navigator.userAgent.match(/iPad/i) ||
+                    navigator.userAgent.match(/iPod/i) ||
+                    navigator.userAgent.match(/BlackBerry/i) ||
+                    navigator.userAgent.match(/Windows Phone/i) ||
+                    navigator.userAgent.match(/Edge/i) ||
+                    navigator.userAgent.match(/MSIE 10/i) ||
+                    navigator.userAgent.match(/MSIE 9/i)
                     // || wind.width() <= 991
-                    || false
-                ) {
-                    return true;
-                }
-
-                return false;
-            }, isMobiles: function () {
-                if (navigator.userAgent.match(/Android/i)
-                    || navigator.userAgent.match(/webOS/i)
-                    || navigator.userAgent.match(/iPhone/i)
-                    || navigator.userAgent.match(/iPad/i)
-                    || navigator.userAgent.match(/iPod/i)
-                    || navigator.userAgent.match(/BlackBerry/i)
-                    || navigator.userAgent.match(/Windows Phone/i)
-                    || navigator.userAgent.match(/Edge/i)
-                    || navigator.userAgent.match(/MSIE 10/i)
-                    || navigator.userAgent.match(/MSIE 9/i)
-                    || wind.width() <= 991
+                    ||
+                    false
                 ) {
                     return true;
                 }
 
                 return false;
             },
-            isScroller: function ($print) {
+            isMobiles: function() {
+                if (navigator.userAgent.match(/Android/i) ||
+                    navigator.userAgent.match(/webOS/i) ||
+                    navigator.userAgent.match(/iPhone/i) ||
+                    navigator.userAgent.match(/iPad/i) ||
+                    navigator.userAgent.match(/iPod/i) ||
+                    navigator.userAgent.match(/BlackBerry/i) ||
+                    navigator.userAgent.match(/Windows Phone/i) ||
+                    navigator.userAgent.match(/Edge/i) ||
+                    navigator.userAgent.match(/MSIE 10/i) ||
+                    navigator.userAgent.match(/MSIE 9/i) ||
+                    wind.width() <= 991
+                ) {
+                    return true;
+                }
+
+                return false;
+            },
+            isScroller: function($print) {
                 if ($print)
                     myScrollbar = document.querySelector('#dsn-scrollbar');
 
@@ -627,7 +625,7 @@
 
                 return !hasSc;
             },
-            locked: function () {
+            locked: function() {
                 body.addClass(locked_scroll);
                 if (this.isScroller()) {
                     let scroll = this.getScrollbar();
@@ -636,20 +634,20 @@
                     }
                 }
             },
-            unlocked: function () {
+            unlocked: function() {
                 body.removeClass(locked_scroll);
                 this.start();
                 animate.allInt();
                 dsnGrid.progressCircle(effectScroll);
 
             },
-            getScrollbar: function ($id) {
+            getScrollbar: function($id) {
                 if ($id === undefined) {
                     return Scrollbar.get(myScrollbar);
                 }
                 return Scrollbar.get(document.querySelector($id));
             },
-            getListener: function ($obj) {
+            getListener: function($obj) {
                 if ($obj === undefined) return;
                 var $this = this;
                 if ($this.isScroller(true)) {
@@ -658,17 +656,17 @@
                     wind.on('scroll', $obj)
                 }
             },
-            start: function () {
+            start: function() {
                 dsnGrid.scrollTop(0, 1);
-                $('.scroll-to').on('click', function (e) {
+                $('.scroll-to').on('click', function(e) {
                     e.preventDefault();
                     let sc = wind;
                     if (effectScroll.isScroller(true))
                         sc = effectScroll.getScrollbar();
 
                     TweenLite.to(sc, 1.5, {
-                        scrollTo: $('.wrapper').offset().top, ease:
-                            Expo.easeInOut,
+                        scrollTo: $('.wrapper').offset().top,
+                        ease: Expo.easeInOut,
                     });
                 });
                 if (!this.isScroller(true)) return;
@@ -684,17 +682,17 @@
                 this.workScroll();
 
             },
-            sliderScroll: function () {
+            sliderScroll: function() {
                 Scrollbar.init(document.querySelector('.slider .main-slider .slider-nav-list'), {
                     damping: 0.05,
                 });
             },
-            menuScroll: function () {
+            menuScroll: function() {
                 Scrollbar.init(document.querySelector('.nav__content'), {
                     damping: 0.05,
                 });
             },
-            commentScroll: function () {
+            commentScroll: function() {
                 const comment = document.querySelector('.comment-modal .comment-modal-container');
                 if (comment !== null)
                     Scrollbar.init(comment, {
@@ -702,7 +700,7 @@
                     });
             },
 
-            sidebarScroll: function () {
+            sidebarScroll: function() {
                 const comment = document.querySelector('.dsn-sidebar .sidebar-single');
                 if (comment !== null)
                     Scrollbar.init(comment, {
@@ -710,7 +708,7 @@
                     });
             },
 
-            workScroll: function () {
+            workScroll: function() {
                 const comment = document.querySelector('.dsn-all-work .dsn-work-scrollbar');
                 if (comment !== null)
                     Scrollbar.init(comment, {
@@ -728,10 +726,10 @@
         const speed = 1.2;
 
         return {
-            initSlider: function () {
+            initSlider: function() {
                 const slid_items = dsn_slider.find('.slide-item');
                 const dsn_slider_content = dsn_slider.find('.dsn-slider-content');
-                slid_items.each(function ($index) {
+                slid_items.each(function($index) {
                     let $this = $(this);
                     $this.attr('data-dsn-id', $index);
                     let slide_content = $(this).find('.slide-content');
@@ -742,9 +740,9 @@
                     dsnGrid.convertTextLine(title, title);
                 });
             },
-            progress: function (swiper) {
+            progress: function(swiper) {
                 let interleaveOffset = 0.5;
-                swiper.on('progress', function () {
+                swiper.on('progress', function() {
 
                     let swiper = this;
                     for (let i = 0; i < swiper.slides.length; i++) {
@@ -756,7 +754,7 @@
                     }
                 });
             },
-            slideChange: function (swiper) {
+            slideChange: function(swiper) {
                 var $this = this;
                 swiper.on('slideChange', start);
 
@@ -773,7 +771,7 @@
 
                     let id = slider.data('dsn-id');
                     if (numOld === id) return;
-                    dsn_slider.find('[data-dsn="video"] video').each(function () {
+                    dsn_slider.find('[data-dsn="video"] video').each(function() {
                         this.pause();
                     });
                     let v = $(this.slides[this.activeIndex]).find('[data-dsn="video"] video');
@@ -800,7 +798,7 @@
                         $this.hideText($isRight).title,
                         0.1,
                         0,
-                        function () {
+                        function() {
                             dsn_slider.find('.dsn-slider-content .slide-content').removeClass('dsn-active');
                             dsn_slider.find('.dsn-slider-content .slide-content').removeClass('dsn-active-cat');
 
@@ -822,7 +820,7 @@
 
                 }
             },
-            showText: function () {
+            showText: function() {
                 return {
                     title: {
                         autoAlpha: 1,
@@ -840,7 +838,7 @@
                     }
                 }
             },
-            hideText: function ($isRigth) {
+            hideText: function($isRigth) {
                 let x = '-90%';
                 if ($isRigth) x = "90%";
                 return {
@@ -859,16 +857,16 @@
                     }
                 }
             },
-            touchStart: function (swiper) {
-                swiper.on('touchStart', function () {
+            touchStart: function(swiper) {
+                swiper.on('touchStart', function() {
                     let swiper = this;
                     for (let i = 0; i < swiper.slides.length; i++) {
                         swiper.slides[i].style.transition = "";
                     }
                 });
             },
-            setTransition: function (swiper) {
-                swiper.on('setTransition', function (speed) {
+            setTransition: function(swiper) {
+                swiper.on('setTransition', function(speed) {
                     let swiper = this;
                     for (let i = 0; i < swiper.slides.length; i++) {
                         swiper.slides[i].style.transition = speed + "ms";
@@ -877,7 +875,7 @@
                     }
                 });
             },
-            swiperObject: function () {
+            swiperObject: function() {
                 return new Swiper('.dsn-slider .slide-inner', {
                     speed: 1500,
                     allowTouchMove: true,
@@ -890,18 +888,18 @@
                         el: '.dsn-slider .footer-slid .control-num span',
                         type: 'custom',
                         clickable: true,
-                        renderCustom: function (swiper, current, total) {
+                        renderCustom: function(swiper, current, total) {
                             return dsnGrid.numberText(current);
                         }
                     },
                     on: {
-                        init: function () {
+                        init: function() {
                             this.autoplay.stop();
-                            dsn_slider.find('[data-dsn="video"] video').each(function () {
+                            dsn_slider.find('[data-dsn="video"] video').each(function() {
                                 this.pause();
                             });
                         },
-                        imagesReady: function () {
+                        imagesReady: function() {
                             let v = $(this.slides[this.activeIndex]).find('[data-dsn="video"] video');
                             if (v.length > 0) v[0].play();
                         }
@@ -911,7 +909,7 @@
             },
 
 
-            run: function () {
+            run: function() {
                 if (dsn_slider.length <= 0) return;
                 this.initSlider();
                 var swiper = this.swiperObject();
@@ -951,10 +949,9 @@
         const $classes = 'dsn-show-work',
             $classes_active = 'dsn-active',
             $classes_active_enter = 'dsn-active-enter',
-            $classes_active_leve = 'dsn-active-leve'
-            ;
+            $classes_active_leve = 'dsn-active-leve';
 
-        $view.on('click', function () {
+        $view.on('click', function() {
             body.toggleClass($classes);
         });
 
@@ -963,7 +960,7 @@
             $Items = $nav_list.find('.work-item'),
             $nav_box_img = $('.nav-work-img-box');
 
-        $Items.each(function ($index) {
+        $Items.each(function($index) {
             let _that = $(this);
             _that.attr('data-dsn-id', $index);
 
@@ -975,7 +972,7 @@
 
         });
 
-        $Items.on('mouseenter', function () {
+        $Items.on('mouseenter', function() {
 
             let $this = getObjectImg($(this));
             if ($this.hasClass($classes_active) || body.hasClass('dsn-ajax-effect')) return;
@@ -1011,17 +1008,17 @@
         return {
             main_root: $(text_main_root),
             ajax_click: $('a.effect-ajax '),
-            isEffectAjax: function () {
+            isEffectAjax: function() {
                 return !body.hasClass('dsn-ajax');
             },
-            ajaxLoad: function () {
+            ajaxLoad: function() {
                 var $parent = this;
                 if ($off) {
                     this.ajax_click.off('click');
                 }
 
 
-                this.ajax_click.on('click', function (e) {
+                this.ajax_click.on('click', function(e) {
                     if ($parent.isEffectAjax()) return;
                     e.preventDefault();
 
@@ -1063,7 +1060,7 @@
 
             },
 
-            ajaxSlider: function ($e, url) {
+            ajaxSlider: function($e, url) {
                 let $parent = this;
 
                 let
@@ -1078,7 +1075,7 @@
                         autoAlpha: 0,
                         scale: 0.8,
                         // y: 50,
-                        onComplete: function () {
+                        onComplete: function() {
                             img.removeClass('hidden');
                             img.find('img').addClass('hidden');
                             $parent.createElement(img, _url, $('.dsn-root-slider'));
@@ -1088,7 +1085,7 @@
 
 
             },
-            ajaxList: function ($e, url) {
+            ajaxList: function($e, url) {
                 let $parent = this;
 
                 let
@@ -1099,9 +1096,9 @@
                 if (_url !== undefined) {
                     TweenMax.to('.nav-work-box .list-main', 0.8, {
                         autoAlpha: 0,
-                        onComplete: function () {
+                        onComplete: function() {
                             $parent.createElement(img, _url);
-                            setTimeout(function () {
+                            setTimeout(function() {
                                 body.removeClass('dsn-show-work');
                             }, 1000);
 
@@ -1109,7 +1106,7 @@
                     });
                 }
             },
-            ajaxNextProject: function ($e, url) {
+            ajaxNextProject: function($e, url) {
                 let $parent = this;
                 let
                     active = $e.parents('.next-project'),
@@ -1123,12 +1120,12 @@
                         autoAlpha: 0,
                         y: -50,
 
-                    }, 0.1, function () {
+                    }, 0.1, function() {
                         $parent.createElement(img, _url, active.find('.bg'));
                     });
                 }
             },
-            ajaxBlog: function ($e, url) {
+            ajaxBlog: function($e, url) {
                 let $parent = this;
                 let
                     active = $e.parents('.post-list-item'),
@@ -1149,13 +1146,13 @@
                     TweenMax.to('.post-list-item-content', 0.8, {
                         autoAlpha: 0,
                         scale: 0.8,
-                        onComplete: function () {
+                        onComplete: function() {
                             $parent.createElement(img.find('img'), _url);
                         }
                     });
                 }
             },
-            ajaxWork: function ($e, url) {
+            ajaxWork: function($e, url) {
                 let img = $e.find('img');
                 img.removeClass('hidden');
                 let $parent = this;
@@ -1165,7 +1162,7 @@
                     height: '100%',
                     top: 0,
                     y: '0%',
-                    onComplete: function () {
+                    onComplete: function() {
 
                         $parent.createElement(img, url);
                     }
@@ -1175,7 +1172,7 @@
             },
 
 
-            createElement: function ($e, url, $target, $letter, $targetLtter) {
+            createElement: function($e, url, $target, $letter, $targetLtter) {
                 let $parent = this;
                 let container = $('<div class="active-ajax-e"></div>');
                 container.css({
@@ -1205,7 +1202,7 @@
 
                 function CompleteShowImage() {
                     body.removeClass(_classAnimate);
-                    $parent.loader(url, function ($e, responseText, jqXHR) {
+                    $parent.loader(url, function($e, responseText, jqXHR) {
                         var img = $(text_e_img);
                         if (img.length <= 0) {
 
@@ -1215,13 +1212,13 @@
                                 autoAlpha: 0,
                                 delay: 1,
                                 ease: Expo.easeIn,
-                                onStart: function () {
+                                onStart: function() {
                                     effectScroller().unlocked();
                                     reloadAjax();
                                 },
-                                onComplete: function () {
+                                onComplete: function() {
                                     body.addClass(_classAnimate);
-                                    setTimeout(function () {
+                                    setTimeout(function() {
                                         container.remove();
                                     }, 500)
 
@@ -1249,10 +1246,10 @@
                             height: img.height(),
                             objectFit: 'cover',
                             borderRadius: 0,
-                            onComplete: function () {
+                            onComplete: function() {
                                 TweenMax.to(container, speed, {
                                     height: 0,
-                                    onComplete: function () {
+                                    onComplete: function() {
                                         effectScroller().unlocked();
                                         $parent.showAnimate();
 
@@ -1261,7 +1258,7 @@
                                 TweenMax.to(img_move, speed, {
                                     autoAlpha: 0,
                                     delay: dealy,
-                                    onComplete: function () {
+                                    onComplete: function() {
                                         container.remove();
                                     }
                                 });
@@ -1273,7 +1270,7 @@
                 }
 
             },
-            addElement: function (container, $e, $target) {
+            addElement: function(container, $e, $target) {
                 if ($e === undefined || $e.length <= 0) return undefined;
 
 
@@ -1301,7 +1298,7 @@
                 return $section;
             },
 
-            ajaxNormal: function (url) {
+            ajaxNormal: function(url) {
                 var _that = this;
                 var elemnt_ajax = $('<div class="class-ajax-loader"></div>');
                 elemnt_ajax.css({
@@ -1333,25 +1330,25 @@
                 TweenMax.to(elemnt_ajax, 1, {
                     y: 0,
                     ease: Expo.easeIn,
-                    onComplete: function () {
-                        _that.loader(url, function () {
+                    onComplete: function() {
+                        _that.loader(url, function() {
                             dsnGrid.scrollTop(0, 1);
                             effectScroller().unlocked();
                         });
                     }
                 });
             },
-            hideAnimate: function () {
+            hideAnimate: function() {
                 TweenMax.set($(dataAttr.animateTextAjax), { autoAlpha: 0, y: -50 });
             },
-            showAnimate: function () {
+            showAnimate: function() {
                 TweenMax.staggerTo($(dataAttr.animateTextAjax), 1, { autoAlpha: 1, y: 0 }, 0.2);
             },
 
-            loader: function (url, callback) {
+            loader: function(url, callback) {
                 var _that = this;
                 body.removeClass('dsn-effect-animate');
-                this.main_root.load(url + ' ' + text_main_root + ' > *', function (responseText, textStatus, jqXHR) {
+                this.main_root.load(url + ' ' + text_main_root + ' > *', function(responseText, textStatus, jqXHR) {
                     var $elemnt = $(this);
                     _that.hideAnimate();
 
@@ -1362,7 +1359,7 @@
                     _that.ajaxTitle(url);
 
                     history.pushState(null, null, url);
-                    setTimeout(function () {
+                    setTimeout(function() {
                         _that.animateAjaxEnd();
 
                         if (callback !== undefined) {
@@ -1373,7 +1370,7 @@
 
                 });
             },
-            animateAjaxEnd: function () {
+            animateAjaxEnd: function() {
                 var _that = this;
                 _that.main_root.css('transform', '');
                 let ajax_section = $('.class-ajax-loader');
@@ -1383,7 +1380,7 @@
                 }, {
                     y: '-100%',
                     ease: Expo.easeIn,
-                    onComplete: function () {
+                    onComplete: function() {
                         ajax_section.remove();
                         _that.ajaxLoaderElemnt();
                         _that.showAnimate();
@@ -1396,7 +1393,7 @@
             },
 
 
-            ajaxNext: function ($e, url) {
+            ajaxNext: function($e, url) {
                 var img_move = $('.dsn-imgs[data-dsn-next="blog"]');
                 var $parent = this;
                 if (img_move.length <= 0) {
@@ -1410,7 +1407,7 @@
                 TweenMax.to(img_move, 1, {
                     top: 0,
                     ease: Expo.easeInOut,
-                    onComplete: function () {
+                    onComplete: function() {
                         $('[data-dsn-header="blog"]').css('width', '100%');
                         $parent.createElement(img_move, url);
                     }
@@ -1418,18 +1415,18 @@
 
 
             },
-            ajaxTitle: function (url) {
-                $('title').load(url + ' title', '', function (data) {
+            ajaxTitle: function(url) {
+                $('title').load(url + ' title', '', function(data) {
                     document.title = $(this).text();
                 });
                 var admin_bar = $('#wpadminbar');
                 if (admin_bar.length > 0) {
-                    admin_bar.load(url + ' #wpadminbar', '', function (data) {
+                    admin_bar.load(url + ' #wpadminbar', '', function(data) {
                         admin_bar.html($(this).html());
                     });
                 }
             },
-            ajaxLoaderElemnt: function ($isShow) {
+            ajaxLoaderElemnt: function($isShow) {
                 var $class = 'dsn-ajax-effect';
                 if ($isShow)
                     body.addClass($class);
@@ -1446,8 +1443,8 @@
      *  a click on the back or forward button
      */
     function effectBackForward() {
-        wind.on('popstate', function (e) {
-            $("main.main-root").load(document.location + ' main.main-root > *', function () {
+        wind.on('popstate', function(e) {
+            $("main.main-root").load(document.location + ' main.main-root > *', function() {
                 reloadAjax(true);
                 effectScroller().unlocked();
             });
@@ -1462,11 +1459,11 @@
         var menu = $('.menu-icon');
 
 
-        $('.site-header .custom-drop-down > a').on('click', function () {
+        $('.site-header .custom-drop-down > a').on('click', function() {
             return false;
         });
 
-        wind.on('load', function () {
+        wind.on('load', function() {
 
             const site_heaer = $('.site-header nav > ul');
             if (site_heaer.length <= 0) return;
@@ -1482,16 +1479,16 @@
 
             const $nav_active = 'nav-active';
 
-            menu.on('click', function () {
+            menu.on('click', function() {
                 body.toggleClass($nav_active);
             });
 
-            $('.nav__list-item:not(.nav__list-dropdown) ').on("click", function () {
+            $('.nav__list-item:not(.nav__list-dropdown) ').on("click", function() {
                 body.removeClass('nav-active');
             });
 
             $(".nav__list-dropdown > a").on('click',
-                function (e) {
+                function(e) {
                     e.preventDefault();
                     var _that = $(this).parent();
                     var dispaly = _that.find('ul').css('display');
@@ -1506,12 +1503,12 @@
 
         });
 
-        wind.on("scroll", function () {
+        wind.on("scroll", function() {
 
             var bodyScroll = wind.scrollTop(),
                 headerSmall = $(".site-header , .header-top")
 
-                ;
+            ;
             var $ofContent = $('.page-content').offset();
             var $top = 70;
             if ($ofContent !== undefined) {
@@ -1555,13 +1552,13 @@
             return;
 
         dsnGrid.mouseMove($elemnet, {
-            onComplete: function (event, element) {
+            onComplete: function(event, element) {
                 if (!element.hasClass('effect-cursor')) {
                     element.addClass('effect-cursor');
                 }
 
             },
-            onUpdate: function (event, x, y, element) {
+            onUpdate: function(event, x, y, element) {
                 if (element.hasClass('effect-cursor')) {
                     element.removeClass('effect-cursor');
                 }
@@ -1609,21 +1606,21 @@
                 enabled: true,
                 duration: 300, // don't foget to change the duration also in CSS
                 easing: 'ease-in-out', // CSS transition easing function
-                opener: function (element) {
+                opener: function(element) {
                     return element.find('img');
                 }
 
             },
             callbacks: {
-                open: function () {
+                open: function() {
                     // Will fire when this exact popup is opened
                     // this - is Magnific Popup object
                     $('html').css({ margin: 0 })
                 },
-                close: function () {
-                    // Will fire when popup is closed
-                }
-                // e.t.c.
+                close: function() {
+                        // Will fire when popup is closed
+                    }
+                    // e.t.c.
             }
 
         });
@@ -1643,7 +1640,7 @@
 
         /* filter items on button click
             -------------------------------------------------------*/
-        filter.on('click', 'button', function () {
+        filter.on('click', 'button', function() {
 
             var filterValue = $(this).attr('data-filter');
 
@@ -1654,28 +1651,28 @@
         });
 
 
-        filter.on('click', 'button', function () {
+        filter.on('click', 'button', function() {
             $(this).addClass('active').siblings().removeClass('active');
             let sc = wind;
             if (effectScroll.isScroller(true))
                 sc = effectScroll.getScrollbar();
 
-            setTimeout(function () {
+            setTimeout(function() {
                 TweenLite.to(sc, 1.5, {
-                    scrollTo: $gallery.offset().top - 150, ease:
-                        Expo.easeInOut,
+                    scrollTo: $gallery.offset().top - 150,
+                    ease: Expo.easeInOut,
                 });
             }, 500)
 
         });
 
-        $gallery.find('video').each(function () {
+        $gallery.find('video').each(function() {
             this.pause();
             let $this = $(this);
-            $this.parents('.item').find('> a').on('mouseenter', function () {
+            $this.parents('.item').find('> a').on('mouseenter', function() {
 
                 $(this).parents('.item').find('video')[0].play();
-            }).on('mouseleave', function () {
+            }).on('mouseleave', function() {
                 $(this).parents('.item').find('video')[0].pause();
             });
         });
@@ -1704,7 +1701,7 @@ function SliderProject() {
  * Attr data overlay
  */
 function data_overlay() {
-    $('[data-overlay-color]').each(function ($index) {
+    $('[data-overlay-color]').each(function($index) {
         var _that = $(this);
         var _color = dsnGrid.removeAttr(_that, 'data-overlay-color');
         _that.addClass('dsn-overlay-' + $index);
@@ -1721,7 +1718,7 @@ function data_overlay() {
 function background() {
 
     var cover = $(".cover-bg, section , [data-image-src]");
-    cover.each(function () {
+    cover.each(function() {
         var attr = $(this).attr('data-image-src');
 
         if (typeof attr !== typeof undefined && attr !== false) {
@@ -1770,7 +1767,7 @@ function contactValidator() {
     }
     contact_form.validator();
     // when the form is submitted
-    contact_form.on('submit', function (e) {
+    contact_form.on('submit', function(e) {
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
@@ -1780,7 +1777,7 @@ function contactValidator() {
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                success: function (data) {
+                success: function(data) {
                     // data = JSON object that contact.php returns
 
                     // we recieve the type of the message: success x danger and apply it to the
@@ -1797,14 +1794,14 @@ function contactValidator() {
                         // empty the form
                         contact_form[0].reset();
                     }
-                    setTimeout(function () {
-                    contact_form.find('.messages').html('');
-                } , 3000);
-                   
+                    setTimeout(function() {
+                        contact_form.find('.messages').html('');
+                    }, 3000);
+
                 },
-                 error :  function (error) {
-                     console.log(error);
-                 }
+                error: function(error) {
+                    console.log(error);
+                }
             });
             return false;
         }
@@ -1828,7 +1825,7 @@ function initMap() {
         document.body.appendChild(script);
     }
 
-    setTimeout(function () {
+    setTimeout(function() {
         try {
             var map_att = $('#map');
             var lat = map_att.data('dsn-lat');
@@ -1842,33 +1839,32 @@ function initMap() {
                     lng: leg
                 },
                 zoom: zoom,
-                styles: [
-                    {
+                styles: [{
                         "featureType": "all",
                         "elementType": "labels.text.fill",
                         "stylers": [{
-                            "saturation": 36
-                        },
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 40
-                        }
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 40
+                            }
                         ]
                     },
                     {
                         "featureType": "all",
                         "elementType": "labels.text.stroke",
                         "stylers": [{
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 16
-                        }
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
                         ]
                     },
                     {
@@ -1882,122 +1878,122 @@ function initMap() {
                         "featureType": "administrative",
                         "elementType": "geometry.fill",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 20
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 20
+                            }
                         ]
                     },
                     {
                         "featureType": "administrative",
                         "elementType": "geometry.stroke",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        },
-                        {
-                            "weight": 1.2
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
                         ]
                     },
                     {
                         "featureType": "landscape",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 20
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 20
+                            }
                         ]
                     },
                     {
                         "featureType": "poi",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 21
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 21
+                            }
                         ]
                     },
                     {
                         "featureType": "road.highway",
                         "elementType": "geometry.fill",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            }
                         ]
                     },
                     {
                         "featureType": "road.highway",
                         "elementType": "geometry.stroke",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 29
-                        },
-                        {
-                            "weight": 0.2
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
                         ]
                     },
                     {
                         "featureType": "road.arterial",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 18
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 18
+                            }
                         ]
                     },
                     {
                         "featureType": "road.local",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 16
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
                         ]
                     },
                     {
                         "featureType": "transit",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 19
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 19
+                            }
                         ]
                     },
                     {
                         "featureType": "water",
                         "elementType": "geometry",
                         "stylers": [{
-                            "color": "#000000"
-                        },
-                        {
-                            "lightness": 17
-                        }
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            }
                         ]
                     }
                 ]
 
             });
-            google.maps.event.addDomListener(window, "resize", function () {
+            google.maps.event.addDomListener(window, "resize", function() {
                 var center = map.getCenter();
                 google.maps.event.trigger(map, "resize");
                 map.setCenter(center);
@@ -2019,6 +2015,3 @@ function initMap() {
 
 
 }
-
-
-
