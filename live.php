@@ -1,10 +1,10 @@
 <?php 
-  session_start(); 
+//   session_start(); 
 
-  if (!isset($_SESSION['email'])) {
-  	$_SESSION['msg'] = "Please submit your details first";
-  	header('location: auth');
-  }
+//   if (!isset($_SESSION['email'])) {
+//   	$_SESSION['msg'] = "Please submit your details first";
+//   	header('location: auth');
+//   }
 ?>
 
 
@@ -41,6 +41,9 @@
         position: relative;
         padding: 0px;
     }
+    .modal-footer{
+        background: #292c2f;
+    }
     
     .close {
         position: absolute;
@@ -54,6 +57,41 @@
         border: none!important;
         background-color: none!important;
     }
+    
+    .stream-icon{
+        background-color:#1f2022 ;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin: 0 20px 0 20px ;
+    }
+
+    .stream-icon i {
+        font-size: 22px; 
+        line-height: 25px;
+        padding: 2px;
+        margin: 5px 5px 5px 7px;
+        color: #fff;  
+    }
+
+    .stream-icon span {
+       color:#fff;
+       font-size: 1rem;
+       margin: 5px 0 5px 0;
+       font-weight:bold;
+    }
+
+    .stream-icon:hover{
+        background-color: #751818 !important;
+        color:#751818;
+        opacity: 0.7;
+        transition: 0.4s ease-in-out;
+    }
+
 </style>
 
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
@@ -167,7 +205,7 @@
                             <p>
                                 <strong>Theme:</strong> Understanding the fundamentals of faith at work.
                             </p>
-                            <div id="getting-started" class="dsn-wrapper" style="text-align: left; color:#ffffff; font-size: 24px;">
+                            <div id="getting-started" class="dsn-wrapper" style="color:#ffffff; font-size: 24px;">
                             </div>
                             <div class="link-custom">
                                 <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&enablejsapi=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
@@ -224,9 +262,24 @@
                     <div class="embed-responsive embed-responsive-21by9">
                         <iframe class="embed-responsive-item" src="" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
                     </div>
-
                 </div>
-
+                <div class="modal-footer">
+                    <div>
+                        <a href="#" class="stream-icon">
+                            <i class="fa fa-bell-o "></i>
+                            <span class="text-muted"> Join </span>
+                        </a>
+                        <a href="#" class="stream-icon">
+                            <i class="fa fa-heart-o "></i>
+                            <span class="text-muted"> Giving </span>
+                        </a>
+                        <a href="#" class="stream-icon">
+                            <i class="fa fa-send-o "></i>
+                            <span class="text-muted"> Share</span>
+                        </a>
+                    </div>
+                   
+                </div>
             </div>
         </div>
     </div>
@@ -279,10 +332,11 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.countdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="https://kit.fontawesome.com/997da4a5f7.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-            $("#getting-started").countdown("2020/3/22", function(event) {
+            $("#getting-started").countdown("2020/3/22 09:00:00", function(event) {
                 $(this).text(event.strftime('%D Days %Hh %Mm %Ss'));
             });
 
