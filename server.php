@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'petracc');
+$db = mysqli_connect('localhost', 'fstackde_petraroot', './configuration.', 'fstackde_petracc');
 
 // REGISTER USER
 if (isset($_POST['submit_biodata'])) {
