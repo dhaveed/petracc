@@ -153,7 +153,7 @@
                                             You, God, are my God, earnestly I seek you; I thirst for you, my whole being longs for you, in a dry and parched land where there is no water.
                                         </p>
                                         <div class="link-custom">
-                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/watch?v=gqIwEbCyxBo" data-target="#petra-modal">
+                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=1&enablejsapi=1" data-target="#petra-modal">
                                                 <span>Join our live service</span>
                                             </a>
                                         </div>
@@ -172,12 +172,13 @@
                                     </div> -->
 
                                     <div class=" " data-dsn="video" data-overlay="4">
-                                        <video class="image-bg cover-bg dsn-video" poster="assets/img/petra/PM8-47.jpg" autoplay loop muted>
+                                        <!-- <video class="image-bg cover-bg dsn-video" poster="assets/img/petra/PM8-47.jpg" autoplay loop muted>
                                             <source src="https://www.youtube.com/embed/wRczfaJDqIE" type="video/mp4"
                                                 type="video/mp4">
                                             <source src="https://www.youtube.com/embed/wRczfaJDqIE" type="video/webm">
                                             Your browser does not support HTML5 video.
-                                        </video>
+                                        </video> -->
+                                        <iframe style="width: 100vw; height: 100vh;" width="1024" height="576" src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -644,7 +645,7 @@
                 // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
                 $("#video").attr(
                     "src",
-                    $videoSrc + "?amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1"
+                    $videoSrc
                 );
             });
 
