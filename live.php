@@ -150,10 +150,10 @@
                 <div class="box-seat box-seat-full section-margin">
                     <div class="container-fluid">
                         <div class="inner-img" data-dsn-grid="move-up">
-                            <!-- <img data-dsn-scale="1" data-dsn-y="30%" src="assets/img/petra/PM8-20.jpg" alt=""> -->
-                            <div class=" " data-dsn="video" data-overlay="4" data-dsn-scale="1" data-dsn-y="30%">
+                            <img data-dsn-scale="1" data-dsn-y="30%" src="assets/img/petra/PM8-20.jpg" alt="">
+                            <!-- <div class=" " data-dsn="video" data-overlay="4" data-dsn-scale="1" data-dsn-y="30%">
                                 <iframe style="width: 100vw; height: 100vh;" src="https://www.youtube.com/embed/wQ6-i8hI3Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="pro-text">
                             <br>
@@ -170,8 +170,8 @@
                             <div id="getting-started" class="dsn-wrapper" style="text-align: left; color:#ffffff; font-size: 24px;">
                             </div>
                             <div class="link-custom">
-                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/watch?v=gqIwEbCyxBo" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
-                                    <span>play</span>
+                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&enablejsapi=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
+                                    <span>Stream Live Service</span>
                                 </a>
                             </div>
                         </div>
