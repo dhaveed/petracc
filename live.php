@@ -1,3 +1,13 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['email'])) {
+  	$_SESSION['msg'] = "Please submit your details first";
+  	header('location: auth');
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -9,7 +19,7 @@
     <meta name="keyword" content="Petra Christian Center" />
 
     <!--  Title -->
-    <title>Petra Christian Center - Landing page</title>
+    <title>Petra Christian Center - Live Stream</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">

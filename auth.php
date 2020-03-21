@@ -1,4 +1,4 @@
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -37,7 +37,7 @@
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax bg-full-screen-image " data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
@@ -48,7 +48,7 @@
         <div class="preloader-bar">
             <div class="preloader-progress"></div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Nav Bar -->
@@ -139,19 +139,6 @@
                                                 <div class="row">
                                                     <div class="col-lg-10 offset-1">
                                                         <div class="messages"></div>
-                                                        <?php
-                                                            if (! empty($errorMessage) && is_array($errorMessage)) {
-                                                                ?>	
-                                                                        <div class="messages">
-                                                                        <?php 
-                                                                        foreach($errorMessage as $message) {
-                                                                            echo $message . "<br/>";
-                                                                        }
-                                                                        ?>
-                                                                        </div>
-                                                            <?php
-                                                            }
-                                                            ?>
                                                         <br>
                                                         <div class="input__wrap controls ">
                                                             <div class="form-group">
@@ -194,28 +181,16 @@
                                         <div class="form-box">
                                             <h4 align="center">Join</h4>
                                             <br><br>
-                                            <form id="contact-form " class="form" data-toggle="validator">
+                                            <form id="biodata-form" class="form" data-toggle="validator" method="post" action="">
                                                 <div class="row">
                                                     <div class="col-lg-10 offset-1">
                                                         <div class="messages"></div>
-                                                        <?php
-                                                            if (! empty($errorMessage) && is_array($errorMessage)) {
-                                                                ?>	
-                                                                        <div class="messages">
-                                                                        <?php 
-                                                                        foreach($errorMessage as $message) {
-                                                                            echo $message . "<br/>";
-                                                                        }
-                                                                        ?>
-                                                                        </div>
-                                                            <?php
-                                                            }
-                                                            ?>
+                                                        <?php include('errors.php'); ?>
                                                         <div class="input__wrap controls ">
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Name</label>
-                                                                    <input id="form_name" type="text" name="email" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
+                                                                    <input id="form_name" type="text" name="name" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -223,7 +198,7 @@
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Email</label>
-                                                                    <input id="form_email" type="email" name="email" placeholder="Type your Email Address" required="required" data-error="Valid email is required.">
+                                                                    <input id="form_email" type="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" placeholder="Type your Email Address" required="required" data-error="Valid email is required.">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -231,11 +206,12 @@
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Phone</label>
-                                                                    <input id="form_phone" type="text" name="email" placeholder="Type your Phone number" required="required" data-error="Phone number is required.">
+                                                                    <input id="form_phone" type="text" name="phone" value="<?php if(isset($_POST['phone'])) echo $_POST['phone']; ?>" placeholder="Type your Phone number" required="required" data-error="Phone number is required.">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                             <br>
+                                                            <!-- <br>
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Password</label>
@@ -251,11 +227,11 @@
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
-                                                            <br>
+                                                            <br> -->
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Facebook Handle</label>
-                                                                    <input id="form_fb" type="text" name="fb-handle" placeholder="Type your Facebook Handle">
+                                                                    <input id="form_fb" type="text" name="fb" <?php if(isset($_POST['fb'])) echo $_POST['fb']; ?>" placeholder="Type your Facebook Handle">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -263,7 +239,7 @@
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Twitter Handle</label>
-                                                                    <input id="form_tweet" type="text" name="tweet-handle" placeholder="Type your Twitter Handle">
+                                                                    <input id="form_tweet" type="text" name="twitter" <?php if(isset($_POST['twitter'])) echo $_POST['twitter']; ?> placeholder="Type your Twitter Handle">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -271,22 +247,22 @@
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Instagram Handle</label>
-                                                                    <input id="form_ig" type="text" name="ig-handle" placeholder="Type your Instagram Handle">
+                                                                    <input id="form_ig" type="text" name="instagram" <?php if(isset($_POST['instagram'])) echo $_POST['instagram']; ?> placeholder="Type your Instagram Handle">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                             <br>
                                                             <div class="image-zoom" data-dsn="parallax">
-                                                                <button>Join</button>
+                                                                <button type="submit" name="submit_biodata">Submit</button>
                                                             </div>
                                                             <br>
-                                                            <div class="text-center">
+                                                            <!-- <div class="text-center">
                                                                 <p class="">Already have an account?
                                                                     <a href="#" class="petra-login">
                                                                         <strong style="color: #5A8DEE">Login</strong>
                                                                     </a>
                                                                 </p>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -381,16 +357,16 @@
 
     <script>
         $(document).ready(function() {
-            $('#petra-login').hide();
-            $('.petra-join').on('click', function() {
-                $('#petra-join').show();
-                $('#petra-login').hide();
-            });
+            // $('#petra-login').hide();
+            // $('.petra-join').on('click', function() {
+            //     $('#petra-join').show();
+            //     $('#petra-login').hide();
+            // });
 
-            $('.petra-login').on('click', function() {
-                $('#petra-login').show();
-                $('#petra-join').hide();
-            });
+            // $('.petra-login').on('click', function() {
+            //     $('#petra-login').show();
+            //     $('#petra-join').hide();
+            // });
 
         });
     </script>
