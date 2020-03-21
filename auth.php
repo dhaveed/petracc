@@ -36,7 +36,7 @@
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax bg-full-screen-image " data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
 
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
@@ -47,7 +47,7 @@
         <div class="preloader-bar">
             <div class="preloader-progress"></div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- Nav Bar -->
