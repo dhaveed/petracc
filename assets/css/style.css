@@ -10263,7 +10263,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
     font-family: "Montserrat", sans-serif;
     color: #fff;
     z-index: 0;
-    font-size: 65px;
+    font-size: 45px;
     line-height: 1.2;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -12165,7 +12165,7 @@ body.dsn-show-work .dsn-all-work .list-main:nth-of-type(20) .work-item {
 .form-box .form-group .help-block {
     color: red;
     font-weight: 600;
-    0 margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form-box .form-group li {
@@ -12637,5 +12637,3 @@ footer .copyright-social ul li:last-child {
 
 
 /*# sourceMappingURL=style.css.map */
-
-0z
