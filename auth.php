@@ -130,7 +130,7 @@
                     <div class="container section-margin">
                         <div class="row">
                             <div class="col-lg-7 petra-card">
-                                <div class="row" id="petra-login">
+                                <!-- <div class="row" id="petra-login">
                                     <div class="col-lg-12">
                                         <div class="form-box">
                                             <h4 align="center">Login</h4>
@@ -139,6 +139,19 @@
                                                 <div class="row">
                                                     <div class="col-lg-10 offset-1">
                                                         <div class="messages"></div>
+                                                        <?php
+                                                            if (! empty($errorMessage) && is_array($errorMessage)) {
+                                                                ?>	
+                                                                        <div class="messages">
+                                                                        <?php 
+                                                                        foreach($errorMessage as $message) {
+                                                                            echo $message . "<br/>";
+                                                                        }
+                                                                        ?>
+                                                                        </div>
+                                                            <?php
+                                                            }
+                                                            ?>
                                                         <br>
                                                         <div class="input__wrap controls ">
                                                             <div class="form-group">
@@ -174,7 +187,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="row" id="petra-join">
                                     <div class="col-sm-12">
@@ -185,11 +198,24 @@
                                                 <div class="row">
                                                     <div class="col-lg-10 offset-1">
                                                         <div class="messages"></div>
+                                                        <?php
+                                                            if (! empty($errorMessage) && is_array($errorMessage)) {
+                                                                ?>	
+                                                                        <div class="messages">
+                                                                        <?php 
+                                                                        foreach($errorMessage as $message) {
+                                                                            echo $message . "<br/>";
+                                                                        }
+                                                                        ?>
+                                                                        </div>
+                                                            <?php
+                                                            }
+                                                            ?>
                                                         <div class="input__wrap controls ">
                                                             <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Name</label>
-                                                                    <input id="form_name" type="text" name="email" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
+                                                                    <input id="form_name" type="text" name="email" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
@@ -355,7 +381,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#petra-join').hide();
+            $('#petra-login').hide();
             $('.petra-join').on('click', function() {
                 $('#petra-join').show();
                 $('#petra-login').hide();
