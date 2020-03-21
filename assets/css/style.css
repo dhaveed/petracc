@@ -6341,7 +6341,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .v-light .box-seat.box-seat-full .pro-text {
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (max-width: 991px) {
@@ -12635,7 +12635,9 @@ footer .copyright-social ul li:last-child {
     color: #000;
 }
 
+.box-seat .pro-text p {
+    margin: 5px 0px !important;
+}
+
 
 /*# sourceMappingURL=style.css.map */
-
-0z
