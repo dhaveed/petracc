@@ -78,7 +78,7 @@
                         <!--<li><a href="#">About</a></li>-->
                         <li><a href="./sermons.html">Sermons</a></li>
                         <li><a href="live">Live Service</a></li>
-                        <li><a href="#">Giving</a></li>
+                        <li><a href="https://paystack.com/pay/petra_give" target="_blank">Giving</a></li>
                         <li><a href="contact.html">Contact us</a></li>
                         <li><a href="auth.html">Join / Login </a></li>
                     </ul>
@@ -119,8 +119,21 @@
                 <div class="nav-content">
                     <div class="inner-content">
                         <address class="v-middle">
-                            <span>Statement Hotel by Abia House, Plot 1002,</span>
-                            <span>1st Avenue, Central Business District, Abuja</span>
+                            <p class="mt-10">
+    <strong>Abuja: </strong>
+    Statement Hotel by Abia House, Plot 1002,<br>1st Avenue, Central Business District, Abuja
+</p>
+
+<p class="mt-20">
+    <strong>Lagos (Lekki): </strong>
+    Delight Center, 4 Oriwu Street
+    <br> (via Elf Bus-stop) Lekki Phase 1, Lagos
+</p>
+
+<p class="mt-20 mb-10">
+    <strong>Lagos (Ikeja): </strong>
+    30b Opebi Road, Ikeja, Lagos
+</p>
                             <span>0701 738 7222, 0701 738 7222</span>
                             <span>info@petracc.org</span>
                         </address>
@@ -145,9 +158,13 @@
                                     <div class="slide-content-inner">
                                         <div class="title-text-header">
                                             <div class="title-text-header-inner">
+<<<<<<< HEAD
                                                 <a href="#" class="effect-ajax " data-dsn-ajax="slider">
+=======
+                                                <!-- <a href="#" class="effect-ajax" data-dsn-ajax="slider"> -->
+>>>>>>> 584670d2567a1ef26f2e8a39060cd6a8b397f70a
                                                     Welcome to Petra Christian Center
-                                                </a>
+                                                <!-- </a> -->
                                             </div>
                                         </div>
                                         <p>
@@ -157,7 +174,7 @@
                                             </a>
                                         </p>
                                         <div class="link-custom">
-                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=1&enablejsapi=1" data-target="#petra-modal">
+                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" data-target="#petra-modal">
                                                 <span>Join our live service</span>
                                             </a>
                                         </div>
@@ -182,8 +199,7 @@
                                             <source src="https://www.youtube.com/embed/wRczfaJDqIE" type="video/webm">
                                             Your browser does not support HTML5 video.
                                         </video>
-                                        <iframe class="pure-hidden-xs pure-hidden-sm" style="width: 100vw; height: 100vh;" width="1024" height="576" src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
+                                        <iframe class="pure-hidden-xs pure-hidden-sm y-stream-bg" style="width: 100vw; height: 100vh;" width="1024" height="576" src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=1&enablejsapi=1&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -549,7 +565,7 @@
             </footer>
 
             <!-- Chatra {literal} -->
-            <script>
+            <!-- <script>
                 (function(d, w, c) {
                     w.ChatraID = 'YbCezNt4cKjwwXK3o';
                     var s = d.createElement('script');
@@ -560,7 +576,7 @@
                     s.src = 'https://call.chatra.io/chatra.js';
                     if (d.head) d.head.appendChild(s);
                 })(document, window, 'Chatra');
-            </script>
+            </script> -->
             <!-- /Chatra {/literal} -->
         </div>
     </main>
@@ -574,7 +590,7 @@
                 <div class="modal-body">
                     <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
                     <div class="embed-responsive embed-responsive-21by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=0&enablejsapi=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item y-stream" src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&mute=0&enablejsapi=1&controls=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -658,12 +674,17 @@
                 $("#video").attr("src", $videoSrc);
             });
 
+            $('#petra-modal').on('hidden.bs.modal', function () {
+                $('.y-stream')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                $('.y-stream-bg')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+            });
+
+            $("#petra-modal").on("shown.bs.modal", function(e) {
+                $('.y-stream')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+                // $('.y-stream-bg')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            });
+
         });
-        // $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        // event.preventDefault();
-        // $(this).ekkoLightbox();
-        // });
-        // })
     </script>
 </body>
 
