@@ -89,7 +89,7 @@
                         <!--<li><a href="#">About</a></li>-->
                         <li><a href="./sermons.html">Sermons</a></li>
                         <li><a href="live.html">Live Service</a></li>
-                        <li><a href="#">Giving</a></li>
+                        <li><a href="https://paystack.com/pay/petra_give" target="_blank">Giving</a></li>
                         <li><a href="contact.html">Contact us</a></li>
                         <li><a href="auth.html">Join / Login </a></li>
                     </ul>
@@ -170,7 +170,9 @@
                             <div id="getting-started" class="dsn-wrapper" style="text-align: left; color:#ffffff; font-size: 24px;">
                             </div>
                             <div class="link-custom">
-                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=1&enablejsapi=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
+                                <!-- <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax"> -->
+                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/lFhVfJGfuSg?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
+                                <!-- <iframe width="424" height="238" src="https://www.youtube.com/embed/lFhVfJGfuSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                                     <span>Stream Live Service</span>
                                 </a>
                             </div>
