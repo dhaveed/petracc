@@ -17,12 +17,37 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+
 </head>
+<style>
+    /* .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+    
+    .modal-body {
+        position: relative;
+        padding: 0px;
+    } */
+    
+    .close {
+        position: absolute;
+        right: -30px;
+        top: 0;
+        z-index: 999;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        opacity: 1;
+        border: none!important;
+        background-color: none!important;
+    }
+</style>
 
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
@@ -33,7 +58,7 @@
         <div class="preloader-bar">
             <div class="preloader-progress"></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Nav Bar -->
     <div class="dsn-nav-bar">
@@ -128,7 +153,7 @@
                                             You, God, are my God, earnestly I seek you; I thirst for you, my whole being longs for you, in a dry and parched land where there is no water.
                                         </p>
                                         <div class="link-custom">
-                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider">
+                                            <a href="#" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/watch?v=gqIwEbCyxBo" data-target="#petra-modal">
                                                 <span>Join our live service</span>
                                             </a>
                                         </div>
@@ -275,6 +300,7 @@
             </div>
 
             <div class="wrapper">
+
                 <section class="intro-about section-margin">
                     <div class="container">
                         <div class="row">
@@ -338,7 +364,7 @@
                             <p><strong>Ministering:</strong> Pastor Michael Peterson.</p>
                             <p><strong>Theme:</strong> Understanding the fundamentals of faith at work.</p>
                             <div class="link-custom">
-                                <a class="image-zoom effect-ajax" href="#" data-dsn="parallax">
+                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/watch?v=gqIwEbCyxBo" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
                                     <span>Join us via Livestream</span>
                                 </a>
                             </div>
@@ -506,6 +532,31 @@
         </div>
     </main>
 
+
+    <!-- video modal -->
+
+    <div class="modal fade" id="petra-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+
+
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end video modal -->
+
+
     <!-- Wait Loader -->
     <div class="wait-loader">
         <div class="loader-inner">
@@ -554,7 +605,31 @@
             $("#getting-started").countdown("2020/3/22", function(event) {
                 $(this).text(event.strftime('%D Days %Hh %Mm %Ss'));
             });
-        })
+
+            // Gets the video src from the data-src on each button
+            var $videoSrc;
+            $(".video-btn").click(function() {
+                $videoSrc = $(this).attr("data-src");
+                console.log("button clicked" + $videoSrc);
+            });
+
+            // when the modal is opened autoplay it
+            $("#petra-modal").on("shown.bs.modal", function(e) {
+                console.log("modal opened" + $videoSrc);
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr(
+                    "src",
+                    $videoSrc + "?amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1"
+                );
+            });
+
+            // stop playing the youtube video when I close the modal
+            $("#petra-modal").on("hide.bs.modal", function(e) {
+                // a poor man's stop video
+                $("#video").attr("src", $videoSrc);
+            });
+
+        });
     </script>
 </body>
 
