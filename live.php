@@ -31,7 +31,7 @@
 
 </head>
 <style>
-    .modal-dialog {
+    /* .modal-dialog {
         max-width: 1000px;
         top: 50px;
         margin: 100px auto;
@@ -57,11 +57,21 @@
         border: none!important;
         background-color: none!important;
     }
-    
+     */
+    .pro-text h5{
+        font-size: 20px;
+        color: #fff;
+    }
+    .pro-text h4{
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 20px;
+    }
     .stream-icon{
         background-color:#1f2022 ;
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         border-radius: 100%;
         outline: none;
         -webkit-transition: all 0.3s;
@@ -71,17 +81,17 @@
     }
 
     .stream-icon i {
-        font-size: 22px; 
+        font-size: 24px; 
         line-height: 25px;
-        padding: 2px;
+        padding: 6px;
         margin: 5px 5px 5px 7px;
         color: #fff;  
     }
 
     .stream-icon span {
        color:#fff;
-       font-size: 1rem;
-       margin: 5px 0 5px 0;
+       font-size: 1.2rem;
+       margin: 15px 0 15px 0;
        font-weight:bold;
     }
 
@@ -169,20 +179,20 @@
                     <div class="inner-content">
                         <address class="v-middle">
                             <p class="mt-10">
-    <strong>Abuja: </strong>
-    Statement Hotel by Abia House, Plot 1002,<br>1st Avenue, Central Business District, Abuja
-</p>
+                                <strong>Abuja: </strong>
+                                Statement Hotel by Abia House, Plot 1002,<br>1st Avenue, Central Business District, Abuja
+                            </p>
 
-<p class="mt-20">
-    <strong>Lagos (Lekki): </strong>
-    Delight Center, 4 Oriwu Street
-    <br> (via Elf Bus-stop) Lekki Phase 1, Lagos
-</p>
+                            <p class="mt-20">
+                                <strong>Lagos (Lekki): </strong>
+                                Delight Center, 4 Oriwu Street
+                                <br> (via Elf Bus-stop) Lekki Phase 1, Lagos
+                            </p>
 
-<p class="mt-20 mb-10">
-    <strong>Lagos (Ikeja): </strong>
-    30b Opebi Road, Ikeja, Lagos
-</p>
+                            <p class="mt-20 mb-10">
+                                <strong>Lagos (Ikeja): </strong>
+                                30b Opebi Road, Ikeja, Lagos
+                            </p>
                             <span>0701 738 7222, 0701 738 7222</span>
                             <span>info@petracc.org</span>
                         </address>
@@ -197,14 +207,78 @@
 
     <main class="main-root">
         <div id="dsn-scrollbar">
-            <div class="wrapper">
+
+
+        <header>
+                <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project" >
+                    <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
+                        <!-- <div class=" " data-dsn="video" data-overlay="4">
+                            <video class="bg-image cover-bg dsn-video" poster="assets/img/video-bg.jpg" autoplay loop
+                                muted>
+                                <source src="http://theme.dsngrid.com/video/videos.mp" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                            
+                        </div> -->
+                    </div>
+
+                    <div class="project-page__inner">
+                        <div class="h-100">
+                            <div class="row justify-content-center align-items-center h-1">
+                                <div class="project-title" id="dsn-hero-parallax-title">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/lFhVfJGfuSg?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+                                    </div>                                
+                                </div>                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row  mt-30">
+                                        <div class="col-lg-8">
+                                            <div class="pro-text ">
+                                                <h4  style="color: #fff;">Understanding the fundamentals of faith at work.</h4>
+                                                <br>
+                                                <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
+                                                
+                                                <p class="mt-5 text-muted">22 March, 2020</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 ">
+                                            <a href="auth.php" class="stream-icon">
+                                                <i class="fa fa-bell-o "></i>
+                                                <span > Join </span>
+                                            </a>
+                                            <a href="https://paystack.com/pay/petra_give" class="stream-icon">
+                                                <i class="fa fa-heart-o "></i>
+                                                <span > Give </span>
+                                            </a>
+                                            <a href="#" class="stream-icon">
+                                                <i class="fa fa-send-o "></i>
+                                                <span > Share</span>
+                                            </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <!-- <div class="wrapper">
                 <div class="box-seat box-seat-full section-margin">
                     <div class="container-fluid">
                         <div class="inner-img" data-dsn-grid="move-up">
                             <img data-dsn-scale="1" data-dsn-y="30%" src="assets/img/petra/PM8-20.jpg" alt="">
-                            <!-- <div class=" " data-dsn="video" data-overlay="4" data-dsn-scale="1" data-dsn-y="30%">
+                            <div class=" " data-dsn="video" data-overlay="4" data-dsn-scale="1" data-dsn-y="30%">
                                 <iframe style="width: 100vw; height: 100vh;" src="https://www.youtube.com/embed/wQ6-i8hI3Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div> -->
+                            </div>
+                            
                         </div>
                         <div class="pro-text">
                             <br>
@@ -221,18 +295,19 @@
                             <div id="getting-started" class="dsn-wrapper" style="color:#ffffff; font-size: 24px;">
                             </div>
                             <div class="link-custom">
-                                <!-- <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax"> -->
+                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
                                 <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/lFhVfJGfuSg?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
-                                <!-- <iframe width="424" height="238" src="https://www.youtube.com/embed/lFhVfJGfuSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                <iframe width="424" height="238" src="https://www.youtube.com/embed/lFhVfJGfuSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <span>Stream Live Service</span>
+                                    
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <footer class="section-margin">
+            <!-- <footer class="section-margin">
                 <div class="info">
                     <div class="contact-footer">
                         <a href="tel:07017387222" class="phone image-zoom" data-dsn="parallax">0701 738 7222</a>
@@ -247,7 +322,7 @@
                         </ul>
                     </div>
                 </div>
-            </footer>
+            </footer> -->
 
             <!-- Chatra {literal} -->
             <script>
@@ -274,6 +349,7 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
+                    
                     <div class="embed-responsive embed-responsive-21by9">
                         <iframe class="embed-responsive-item" src="" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
                     </div>
