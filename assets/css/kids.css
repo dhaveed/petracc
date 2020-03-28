@@ -161,7 +161,7 @@ body::after {
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 16px;
   font-style: italic;
   line-height: 1.35;
   text-align: left;

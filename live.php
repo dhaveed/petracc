@@ -117,15 +117,22 @@
         padding: 40px 0px !important;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px and max-width: 1202) {
         .project-page__inner {
             /* max-width: 100vw !important; */
+            max-width: 80vw !important; height: 80vh !important;
+            margin: 0px auto;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .project-page__inner {
             max-width: 70vw !important; height: 80vh !important;
             margin: 0px auto;
         }
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 991px) {
         .project-page__inner {
             max-width: 100vw !important;
         }
@@ -266,7 +273,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="row  mt-30">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-5">
                                             <div class="pro-text ">
                                                 <h4  style="color: #fff;">Worship Cafe.</h4>
                                                 <br>
@@ -275,7 +282,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4 ">
+                                        <div class="col-lg-7 ">
                                             <div class="fabs">
                                                 <a href="#" class="stream-icon" data-toggle="modal"  data-target="#petra-modal">
                                                     <i class="fa fa-bell-o "></i>
