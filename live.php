@@ -117,7 +117,15 @@
         padding: 40px 0px !important;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media screen and (min-width: 1024px) {
+        .project-page__inner {
+            /* max-width: 100vw !important; */
+            max-width: 70vw !important; height: 80vh !important;
+            margin: 0px auto;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
         .project-page__inner {
             max-width: 100vw !important;
         }
@@ -244,7 +252,7 @@
                         </div> -->
                     </div>
 
-                    <div class="project-page__inner" style="max-width: 70vw !important; height: 80vh !important; margin: 0px auto;">
+                    <div class="project-page__inner" style="">
                         <div class="h-80">
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
@@ -373,7 +381,7 @@
                 <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</span>
                     <div class="row" id="petra-join">
                         <div class="col-sm-12">
-                            <h3 align="center ">Join</h3>
+                            <h3 align="center ">Join eFam Church</h3>
                             <br>
                             <form id="biodata-form" class="form" data-toggle="validator" method="post" action="">
                                 <div class="row">
