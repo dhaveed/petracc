@@ -7,8 +7,8 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-// $db = mysqli_connect('localhost', 'fstackde_petraroot', './configuration.', 'fstackde_petracc');
-$db = mysqli_connect('localhost', 'root', '', 'petracc');
+$db = mysqli_connect('localhost', 'fstackde_petraroot', './configuration.', 'fstackde_petracc');
+// $db = mysqli_connect('localhost', 'root', '', 'petracc');
 
 // REGISTER USER
 if (isset($_POST['submit_biodata'])) {
@@ -16,9 +16,9 @@ if (isset($_POST['submit_biodata'])) {
   $fullname = mysqli_real_escape_string($db, $_POST['name']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $phone = mysqli_real_escape_string($db, $_POST['phone']);
-  $facebook = mysqli_real_escape_string($db, $_POST['fb']);
-  $twitter = mysqli_real_escape_string($db, $_POST['twitter']);
-  $instagram = mysqli_real_escape_string($db, $_POST['instagram']);
+  // $facebook = mysqli_real_escape_string($db, $_POST['fb']);
+  // $twitter = mysqli_real_escape_string($db, $_POST['twitter']);
+  // $instagram = mysqli_real_escape_string($db, $_POST['instagram']);
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
@@ -41,11 +41,11 @@ if (isset($_POST['submit_biodata'])) {
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
 
-  	$query = "INSERT INTO members(name, email, phone, facebook, twitter, instagram) 
-  			  VALUES('$fullname', '$email', '$phone', '$facebook', '$twitter', '$instagram')";
+  	$query = "INSERT INTO members(name, email, phone) 
+  			  VALUES('$fullname', '$email', '$phone')";
   	mysqli_query($db, $query);
   	$_SESSION['email'] = $email;
-  	$_SESSION['success'] = "Registration was successful";
+  	$_SESSION['success'] = "God Bless You.";
   	header('location: live');
   }
 }

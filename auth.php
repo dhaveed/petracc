@@ -1,15 +1,14 @@
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en-US">
-
-
+ 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="discrption" content="parallax one page" />
-    <meta name="keyword" content="Petra Christian Center" />
+    <meta name="keyword" content="Petra Christian Centre" />
 
-    <title>Petra Christian Center - Auth page</title>
+    <title>Petra Christian Centre - Auth page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&amp;display=swap" rel="stylesheet">
@@ -37,18 +36,18 @@
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax bg-full-screen-image " data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
 
-    <!-- <div class="preloader">
+    <!--<div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
-            <div class="title">Welcome to Petra Christian Center</div>
+            <div class="title">Welcome to Petra Christian Centre</div>
             <div class="percent">0</div>
             <div class="loading">loading...</div>
         </div>
         <div class="preloader-bar">
             <div class="preloader-progress"></div>
         </div>
-    </div> -->
+    </div>-->
 
 
     <!-- Nav Bar -->
@@ -65,12 +64,12 @@
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
                         <li><a href="index">Home</a></li>
-                        <!--<li><a href="#">About</a></li>-->
-                        <li><a href="./sermons.html">Sermons</a></li>
+                        <li><a href="./about">About</a></li>
+                        <li><a href="./sermon">Sermons</a></li>
                         <li><a href="#">Live Service</a></li>
-                        <li><a href="https://paystack.com/pay/petra_give" target="_blank">Giving</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                        <li><a href="auth.html">Join / Login </a></li>
+                        <li><a href="#">Giving</a></li>
+                        <li><a href="./contact">Contact us</a></li>
+                        <!--<li><a href="auth.html">Join / Login </a></li>-->
                     </ul>
                 </nav>
             </div>
@@ -109,22 +108,9 @@
                 <div class="nav-content">
                     <div class="inner-content">
                         <address class="v-middle">
-                            <p class="mt-10">
-    <strong>Abuja: </strong>
-    Statement Hotel by Abia House, Plot 1002,<br>1st Avenue, Central Business District, Abuja
-</p>
-
-<p class="mt-20">
-    <strong>Lagos (Lekki): </strong>
-    Delight Center, 4 Oriwu Street
-    <br> (via Elf Bus-stop) Lekki Phase 1, Lagos
-</p>
-
-<p class="mt-20 mb-10">
-    <strong>Lagos (Ikeja): </strong>
-    30b Opebi Road, Ikeja, Lagos
-</p>
-                            <span>0701 738 7222, 0701 738 7222</span>
+                            <span>Statement Hotel by Abia House, Plot 1002,</span>
+                            <span>1st Avenue, Central Business District, Abuja</span>
+                            <span>+234 701 738 7222</span>
                             <span>info@petracc.org</span>
                         </address>
                     </div>
@@ -241,7 +227,7 @@
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                             <br> -->
-                                                            <div class="form-group">
+                                                            <!-- <div class="form-group">
                                                                 <div class="entry">
                                                                     <label>Facebook Handle</label>
                                                                     <input id="form_fb" type="text" name="fb" <?php if(isset($_POST['fb'])) echo $_POST['fb']; ?>" placeholder="Type your Facebook Handle">
@@ -264,6 +250,7 @@
                                                                 </div>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
+                                                            <br> -->
                                                             <br>
                                                             <div class="image-zoom" data-dsn="parallax">
                                                                 <button type="submit" name="submit_biodata">Submit</button>
@@ -295,9 +282,9 @@
                             <a href="#" class="email image-zoom" data-dsn="parallax">info@petracc.org</a>
                         </div>
                         <div class="copyright-social">
-                            <p>Service Times: 9:00 am every Sunday </p>
+                            <p>Service Times: 9:00 am every Sunday & 6:30pm every Wednesday </p>
                             <ul>
-                                <li class="image-zoom" data-dsn="parallax"><a href="https://www.instagram.com/tribepetra" target="_blank">Instagram</a></li>
+                                <li class="image-zoom" data-dsn="parallax"><a href="https://www.instagram.com/petrachristriancenter" target="_blank">Instagram</a></li>
                                 <li class="image-zoom" data-dsn="parallax"><a href="https://www.facebook.com/petrachristiancentre" target="_blank">Facebook</a></li>
                                 <li class="image-zoom" data-dsn="parallax"><a href="https://twitter.com/Petra_CC" target="_blank">Twitter</a></li>
                             </ul>
@@ -308,7 +295,7 @@
 <!-- Chatra {literal} -->
 <script>
     (function(d, w, c) {
-        w.ChatraID = 'YbCezNt4cKjwwXK3o';
+        w.ChatraID = 's34WyYYDdgW7kcZou';
         var s = d.createElement('script');
         w[c] = w[c] || function() {
             (w[c].q = w[c].q || []).push(arguments);
@@ -334,7 +321,7 @@
     <!-- // Wait Loader -->
 
     <!-- cursor -->
-    <div class="global-cursor">
+    <!--<div class="global-cursor">
         <div class="custom-cursor single-cursor effect-cursor">
             <div class="cursor-container">
                 <div class="cursor-text">
@@ -356,7 +343,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- End cursor -->
 
     <!-- Optional JavaScript -->
