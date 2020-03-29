@@ -390,14 +390,6 @@
                 </div>
             </footer> -->
 
-            <!-- audio streaming  -->
-            <div class="patra-mixlr">
-                <a href="#" >
-                <i class="fas fa-podcast"></i>
-                </a>
-            </div>
-            <!-- /audio streaming  -->
-
             <style>
                 .icon-bar {
                     position: fixed;
