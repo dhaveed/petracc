@@ -138,6 +138,29 @@
         }
     }
 
+    .embed-responsive:after {
+        content: "Live";
+        font-size: 16px;
+        background: #fff;
+        z-index: 10;
+        color: red;
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        border-radius: 50px;
+        padding: 10px 15px;
+        font-weight: bold;
+        animation:blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: red; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: red;    }
+}
+
     
 </style>
 
@@ -172,7 +195,7 @@
                     <ul class="extend-container">
                         <li><a href="index">Home</a></li>
                         <li><a href="./about">About</a></li>
-                        <li><a href="./sermons.html">Sermons</a></li>
+                        <li><a href="https://live.petracc.org/sermonss.html">Sermons</a></li>
                         <!--<li><a href="live.html">Live Service</a></li>-->
                         <li><a href="https://paystack.com/pay/petra_give" target="_blank">Online Giving</a></li>
                         <li><a href="./contact">Contact us</a></li>
