@@ -117,33 +117,6 @@
         padding: 40px 0px !important;
     }
 
-    .patra-mixlr{
-        position: fixed;
-        margin: 0 20px 20px 20px ;
-        padding: 10px;
-        border: 1px solid #0d8bcd;
-        border-radius: 100%;
-        width: 60px;
-        height: 60px;
-        z-index: 1000;
-        left:20px;
-        right: 0;
-        bottom: 0;
-        top:auto;
-        
-        background: #0d8bcd;
-        box-shadow: 0 0 10px rgba(0,0,0,.3);
-    }
-
-    .patra-mixlr i{
-        display: block;
-       font-size: 2.7rem;
-       margin: 1px auto 1px auto;
-       font-weight:bold;
-       color: #fff;
-    }
-
-    @media only screen and (max-width: 767px) {
     @media screen and (min-width: 1024px and max-width: 1202) {
         .project-page__inner {
             /* max-width: 100vw !important; */
@@ -187,6 +160,32 @@
     99%{    color:transparent;  }
     100%{   color: red;    }
 }
+
+.patra-mixlr{
+        position: fixed;
+        margin: 0 20px 20px 20px ;
+        padding: 10px;
+        border: 1px solid #0d8bcd;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        z-index: 1000;
+        left:20px;
+        right: 0;
+        bottom: 0;
+        top:auto;
+        
+        background: #0d8bcd;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+
+    .patra-mixlr i{
+        display: block;
+       font-size: 2.7rem;
+       margin: 1px auto 1px auto;
+       font-weight:bold;
+       color: #fff;
+    }
 
     
 </style>
@@ -295,9 +294,8 @@
     <main class="main-root">
         <div id="dsn-scrollbar">
 
-       
 
-            <header>
+        <header>
                 <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project" >
                     <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
                         <!-- <div class=" " data-dsn="video" data-overlay="4">
@@ -356,7 +354,6 @@
                         </div>
                     </div>
                 </div>
-                
             </header>
 
 
@@ -422,7 +419,6 @@
                 </a>
             </div>
             <!-- /audio streaming  -->
-
 
             <!-- Chatra {literal} -->
             <script>
