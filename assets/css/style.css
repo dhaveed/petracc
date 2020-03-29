@@ -6316,7 +6316,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
     background-color: #0d0d0d;
     max-width: 600px;
     padding: 80px;
-    right: 60px;
+    /* right: 60px; */
     bottom: -80px;
     border-bottom: 3px solid black;
 }
@@ -6372,7 +6372,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.pro-text-2 p, .pro-text-2 div, .pro-text-2 a, .pro-text-2 h3 {
+.pro-text-2 p,
+.pro-text-2 div,
+.pro-text-2 a,
+.pro-text-2 h3 {
     color: #fff;
 }
 
