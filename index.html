@@ -45,6 +45,39 @@
         border: none!important;
         background-color: none!important;
     }
+    
+    .fb-card {
+        border: 1px solid #0d0d0d;
+        background: #0d0d0d;
+        max-width: 600px;
+        height: auto;
+        padding: 60px;
+        margin: -100px 30px 0 30px;
+        z-index: 10;
+        color: #fff!important;
+        bottom: 0;
+    }
+    
+    .tb-card {
+        border: 1px solid #e6e6e6;
+        background: #e6e6e6;
+        max-width: 600px;
+        height: auto;
+        padding: 60px;
+        margin: -100px 30px 0 30px;
+        bottom: 0;
+        z-index: 10;
+        border-bottom: 3px solid black;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .fb-card {
+            margin: -250px auto 0 auto;
+        }
+        .tb-card {
+            margin: 10px auto 0 auto;
+        }
+    }
 </style>
 
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
@@ -445,7 +478,7 @@
                     </div>
                 </section>
 
-                <div class="box-seat box-seat-full section-margin pure-hidden-sm">
+                <div class="box-seat box-seat-full section-margin pure-hiddensm">
                     <div class="container-fluid">
                         <div class="inner-img" data-dsn-grid="move-up">
                             <img data-dsn-scale="1" data-dsn-y="30%" src="assets/img/petra/PETCC-12.jpg" alt="">
@@ -453,14 +486,13 @@
                             <!--    <iframe style="width: 100vw; height: 100vh;" src="https://www.youtube.com/embed/wQ6-i8hI3Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                             <!--</div>-->
                         </div>
-
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="pro-text-2">
+                                        <div class="fb-card">
                                             <br>
-                                            <h3>Facebook Groups</h3>
+                                            <h3 style="color: #fff;">Facebook Groups</h3>
                                             <P>
                                                 Join the live experience with other members of your campus.
                                             </P>
@@ -474,7 +506,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="pro-text-3">
+                                        <div class="tb-card">
                                             <br>
                                             <h3>Tribe Petra Kids</h3>
                                             <p>
@@ -488,12 +520,11 @@
                                                 </a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
