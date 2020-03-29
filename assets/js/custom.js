@@ -129,7 +129,7 @@
         });
 
 
-        $(' .our-news .slick-slider , .our-team .slick-slider , [data-dsn-col="2"] .slick-slider').slick({
+        $(' .our-news .slick-slider , .our-team .slick-slider , [data-dsn-col="2"] .slick-slider, .our-work .slick-slider').slick({
             infinite: true,
             slidesToShow: 2,
             arrows: false,

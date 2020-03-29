@@ -144,6 +144,22 @@
     }
 
     @media only screen and (max-width: 767px) {
+    @media screen and (min-width: 1024px and max-width: 1202) {
+        .project-page__inner {
+            /* max-width: 100vw !important; */
+            max-width: 80vw !important; height: 80vh !important;
+            margin: 0px auto;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .project-page__inner {
+            max-width: 70vw !important; height: 80vh !important;
+            margin: 0px auto;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
         .project-page__inner {
             max-width: 100vw !important;
         }
@@ -271,7 +287,7 @@
                         </div> -->
                     </div>
 
-                    <div class="project-page__inner" style="max-width: 70vw !important; height: 80vh !important; margin: 0px auto;">
+                    <div class="project-page__inner" style="">
                         <div class="h-80">
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
@@ -285,7 +301,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="row  mt-30">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-5">
                                             <div class="pro-text ">
                                                 <h4  style="color: #fff;">Worship Cafe.</h4>
                                                 <br>
@@ -294,7 +310,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4 ">
+                                        <div class="col-lg-7 ">
                                             <div class="fabs">
                                                 <a href="#" class="stream-icon" data-toggle="modal"  data-target="#petra-modal">
                                                     <i class="fa fa-bell-o "></i>
@@ -410,7 +426,7 @@
                 <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</span>
                     <div class="row" id="petra-join">
                         <div class="col-sm-12">
-                            <h3 align="center ">Join</h3>
+                            <h3 align="center ">Join eFam Church</h3>
                             <br>
                             <form id="biodata-form" class="form" data-toggle="validator" method="post" action="">
                                 <div class="row">

@@ -6305,7 +6305,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .box-seat .pro-text-2 {
     position: absolute;
     background-color: #0d0d0d;
-    /* max-width: 600px; */
+    max-width: 600px;
     padding: 80px;
     left: 60px;
     bottom: -80px;
@@ -6314,10 +6314,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .box-seat .pro-text-3 {
     position: absolute;
     background-color: #0d0d0d;
-    /* max-width: 600px; */
+    max-width: 600px;
     padding: 80px;
-    right: 50px;
-    top: 50px;
+    /* right: 60px; */
+    bottom: -80px;
     border-bottom: 3px solid black;
 }
 
