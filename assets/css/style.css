@@ -3966,6 +3966,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
         padding-left: 0;
         padding-bottom: 10px;
         text-align: center;
+        font-size: 30px;
     }
 }
 
@@ -4101,7 +4102,7 @@ body.nav-active .header-top .header-container .menu-icon:hover .text-menu .text-
 }
 
 .v-light.menu-light .nav__list-item a:hover {
-    color: #000;
+    color: #fff;
 }
 
 .nav__list-item ul {
@@ -4664,7 +4665,10 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 @media only screen and (max-width: 991px) {
     .v-light.nav-active .nav__list-item a {
-        color: #333;
+        color: #fff;
+    }
+    .v-light.nav-active .nav__list-item a:hover {
+        color: #fff;
     }
 }
 
