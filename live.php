@@ -1,10 +1,9 @@
 <?php 
-//   session_start(); 
+// include('server.php') 
+// $db = mysqli_connect('localhost', 'root', '', 'petracc');
 
-//   if (!isset($_SESSION['email'])) {
-//   	$_SESSION['msg'] = "Please submit your details first";
-//   	header('location: auth');
-//   }
+    
+
 ?>
 
 
@@ -27,6 +26,7 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/swal.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 </head>
@@ -291,7 +291,9 @@
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+                                        <!-- <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe> -->
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+
                                         
                                     </div>                                
                                 </div>                                
@@ -434,7 +436,7 @@
                                             </div>
                                             <br>
                                             <div class="image-zoom" data-dsn="parallax">
-                                                <button type="submit" name="submit_biodata">Submit</button>
+                                                <button type="submit" name="submit_biodata">Submit <i class="fa fa-circle-o-notch fa-spin ml-10 spinning"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -459,32 +461,6 @@
     </div>
     <!-- // Wait Loader -->
 
-    <!-- cursor -->
-    <!--<div class="global-cursor">
-        <div class="custom-cursor single-cursor effect-cursor">
-            <div class="cursor-container">
-                <div class="cursor-text">
-                    <div class="cursor-text-wrapper">
-                        <div class="cursor-text-value">Scroll</div>
-                    </div>
-                    <div class="cursor-text-wrapper">
-                        <div class="cursor-text-value nth-2">or hold</div>
-                    </div>
-                </div>
-                <div class="cursor-part">
-                    <div class="cursor-item"></div>
-                </div>
-                <div class="cursor-part cursor-left">
-                    <i class="fas fa-caret-left"></i>
-                </div>
-                <div class="cursor-part cursor-right">
-                    <i class="fas fa-caret-right"></i>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- End cursor -->
-
     <!-- Optional JavaScript -->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -495,8 +471,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="https://kit.fontawesome.com/997da4a5f7.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/swal.min.js"></script>
     <script>
         $(document).ready(function() {
+            $('.spinning').toggle();   
             $("#getting-started").countdown("2020/3/22 09:00:00", function(event) {
                 $(this).text(event.strftime('%D Days %Hh %Mm %Ss'));
             });
@@ -524,12 +502,58 @@
                 $("#video").attr("src", $videoSrc);
             });
 
+            $('#biodata-form').on('submit', (e)=>{
+                e.preventDefault();
+                
+                var $form = $('form#biodata-form');
+                var $inputs = $form.find("input, select, button, textarea");
+                var $loader = $('.spinning');
+
+                $inputs.prop("disabled", true);
+                $loader.toggle();
+
+                var $serialized = $('#biodata-form').serializeArray();
+
+                var clean = {};
+
+                $.each($serialized, (key, value) => {
+                    clean[$serialized[key].name] = $serialized[key].value;
+                })
+
+                request = $.ajax({
+                    url: "live.php",
+                    type: "post",
+                    data: clean
+                });
+
+                // Callback handler (on success)
+                request.done(function (res, textStatus, jqXHR) {
+                    console.log(res)
+                    Swal.fire({
+                        icon: res.success ? 'success' : 'error',
+                        title: res.success ? 'Done!' : 'Oops...',
+                        text: res.message
+                    })
+                });
+
+                // Callback handler (failed)
+                request.fail(function (jqXHR, textStatus, errorThrown) {
+                    // console.error(
+                    //     "The following error occurred: " +
+                    //     textStatus, errorThrown
+                    // );
+                });
+
+                // Callback handler
+                request.always(function () {
+                    $inputs.prop("disabled", false);
+                    $loader.toggle();
+                });
+
+                console.log(clean)
+            })
+
         });
-        // $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        // event.preventDefault();
-        // $(this).ekkoLightbox();
-        // });
-        // })
     </script>
 </body>
 
