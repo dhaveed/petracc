@@ -2,7 +2,7 @@
 // include('server.php') 
 // $db = mysqli_connect('localhost', 'root', '', 'petracc');
 
-    
+
 
 ?>
 
@@ -211,7 +211,7 @@
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <!-- <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe> -->
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
 
                                         
                                     </div>                                
