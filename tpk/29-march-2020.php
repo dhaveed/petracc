@@ -47,7 +47,7 @@
     </div>-->
 
     <!-- Nav Bar -->
-    <?php include('./assets/includes/navbar.php') ?>
+    <?php include('../assets/includes/navbar.php') ?>
     <!-- End Nav Bar -->
 
     <main class="main-root">
