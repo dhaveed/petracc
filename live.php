@@ -223,10 +223,10 @@
                                     <div class="row  mt-30">
                                         <div class="col-lg-5">
                                             <div class="pro-text ">
-                                                <h4  style="color: #fff;">Worship Cafe.</h4>
+                                                <h4  style="color: #fff;">The Gift of Peace.</h4>
                                                 <br>
                                                 <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                                                <p class="mt-5 text-muted">27 March, 2020</p>
+                                                <p class="mt-5 text-muted">29 March, 2020</p>
                                             </div>
                                         </div>
 
