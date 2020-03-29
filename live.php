@@ -334,74 +334,10 @@
                 </div>
             </header>
 
-
-
-            <!-- <div class="wrapper">
-                <div class="box-seat box-seat-full section-margin">
-                    <div class="container-fluid">
-                        <div class="inner-img" data-dsn-grid="move-up">
-                            <img data-dsn-scale="1" data-dsn-y="30%" src="assets/img/petra/PM8-20.jpg" alt="">
-                            <div class=" " data-dsn="video" data-overlay="4" data-dsn-scale="1" data-dsn-y="30%">
-                                <iframe style="width: 100vw; height: 100vh;" src="https://www.youtube.com/embed/wQ6-i8hI3Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            
-                        </div>
-                        <div class="pro-text">
-                            <br>
-                            <h3>Worship with us</h3>
-                            <p>
-                                Join us for our next sunday service live online
-                            </p>
-                            <p>
-                                <strong>Ministering:</strong> Pastor Ayo Ajani.
-                            </p>
-                            <p>
-                                <strong>Theme:</strong> No Fear Here!
-                            </p>
-                            <div id="getting-started" class="dsn-wrapper" style="color:#ffffff; font-size: 24px;">
-                            </div>
-                            <div class="link-custom">
-                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
-                                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/lFhVfJGfuSg?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" data-target="#petra-modal" class="image-zoom effect-ajax video-btn" data-dsn="parallax">
-                                <iframe width="424" height="238" src="https://www.youtube.com/embed/lFhVfJGfuSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <span>Stream Live Service</span>
-                                    
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <footer class="section-margin">
-                <div class="info">
-                    <div class="contact-footer">
-                        <a href="tel:07017387222" class="phone image-zoom" data-dsn="parallax">0701 738 7222</a>
-                        <a href="mailto:" class="email image-zoom" data-dsn="parallax">info@petracc.org</a>
-                    </div>
-                    <div class="copyright-social">
-                        <p>Service Times: 9:00 am every Sunday & 6:30pm every Wednesday </p>
-                        <ul>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://www.instagram.com/petrachristriancenter" target="_blank">Instagram</a></li>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://www.facebook.com/petrachristiancentre" target="_blank">Facebook</a></li>
-                            <li class="image-zoom" data-dsn="parallax"><a href="https://twitter.com/Petra_CC" target="_blank">Twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer> -->
-
-            <!-- audio streaming  -->
-            <div class="patra-mixlr">
-                <a href="#" >
-                <i class="fas fa-podcast"></i>
-                </a>
-            </div>
-            <!-- /audio streaming  -->
-
             <style>
                 .icon-bar {
                     position: fixed;
-                    top: 95%;
+                    bottom: 0%;
                     -webkit-transform: translateY(-50%);
                     -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
