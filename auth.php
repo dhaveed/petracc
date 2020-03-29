@@ -65,7 +65,7 @@
                     <ul class="extend-container">
                         <li><a href="index">Home</a></li>
                         <li><a href="./about">About</a></li>
-                        <li><a href="./sermon">Sermons</a></li>
+                        <li><a href="https://live.petracc.org/sermons">Sermons</a></li>
                         <li><a href="#">Live Service</a></li>
                         <li><a href="#">Giving</a></li>
                         <li><a href="./contact">Contact us</a></li>

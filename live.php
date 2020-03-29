@@ -117,33 +117,6 @@
         padding: 40px 0px !important;
     }
 
-    .patra-mixlr{
-        position: fixed;
-        margin: 0 20px 20px 20px ;
-        padding: 10px;
-        border: 1px solid #0d8bcd;
-        border-radius: 100%;
-        width: 60px;
-        height: 60px;
-        z-index: 1000;
-        left:20px;
-        right: 0;
-        bottom: 0;
-        top:auto;
-        
-        background: #0d8bcd;
-        box-shadow: 0 0 10px rgba(0,0,0,.3);
-    }
-
-    .patra-mixlr i{
-        display: block;
-       font-size: 2.7rem;
-       margin: 1px auto 1px auto;
-       font-weight:bold;
-       color: #fff;
-    }
-
-    @media only screen and (max-width: 767px) {
     @media screen and (min-width: 1024px and max-width: 1202) {
         .project-page__inner {
             /* max-width: 100vw !important; */
@@ -164,6 +137,33 @@
             max-width: 100vw !important;
         }
     }
+
+    .embed-responsive:after {
+        content: "Live";
+        font-size: 16px;
+        background: #fff;
+        z-index: 10;
+        color: red;
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        border-radius: 50px;
+        padding: 10px 15px;
+        font-weight: bold;
+        animation:blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: red; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: red;    }
+}
+
+.headefr-fexid {
+    height: 100vh;
+}
 
     
 </style>
@@ -199,7 +199,7 @@
                     <ul class="extend-container">
                         <li><a href="index">Home</a></li>
                         <li><a href="./about">About</a></li>
-                        <li><a href="./sermons.html">Sermons</a></li>
+                        <li><a href="https://live.petracc.org/sermonss.html">Sermons</a></li>
                         <!--<li><a href="live.html">Live Service</a></li>-->
                         <li><a href="https://paystack.com/pay/petra_give" target="_blank">Online Giving</a></li>
                         <li><a href="./contact">Contact us</a></li>
@@ -272,9 +272,8 @@
     <main class="main-root">
         <div id="dsn-scrollbar">
 
-       
 
-            <header>
+        <header>
                 <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project" >
                     <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
                         <!-- <div class=" " data-dsn="video" data-overlay="4">
@@ -333,7 +332,6 @@
                         </div>
                     </div>
                 </div>
-                
             </header>
 
 
@@ -400,6 +398,47 @@
             </div>
             <!-- /audio streaming  -->
 
+            <style>
+                .icon-bar {
+                    position: fixed;
+                    top: 95%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    }
+
+                    /* Style the icon bar links */
+                    .icon-bar a {
+                    display: block;
+                    text-align: center;
+                    padding: 16px;
+                    transition: all 0.3s ease;
+                    color: white;
+                    font-size: 16px;
+                    }
+
+                    /* Style the social media icons with color, if you want */
+                    .icon-bar a:hover {
+                    background-color: #fff;
+                    color: #000
+                    }
+
+                    .mixlr {
+                    background: #0C8ACD;
+                    color: white;
+                    }
+
+            </style>
+
+
+            <!-- audio alt -->
+            <div class="icon-bar">
+                <a href="#" class="mixlr">
+                    <i class="fas fa-podcast" style="margin-right: 5px;"></i>
+                    Listen on Mixlr
+                </a>
+            </div>
+            <!-- /audio alt -->
 
             <!-- Chatra {literal} -->
             <script>
