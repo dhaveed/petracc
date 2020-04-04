@@ -70,7 +70,7 @@
                                             The Triumphal Entry. - 5th April, 2020
                                         </h2>
                                         <p class="copy" style="font-size: 18px;">
-                                            [ Matthew 21:1-11 ] The Easter story begins with this beautiful scene. In Jesus’ time if a king rode on a donkey, it was a sign that he came in peace. Jesus had come in peace, and the people welcomed him like royalty...
+                                            [ Matthew 21:1-11 ] The Easter story begins with this beautiful scene. In Jesus’ time if a king rode on a donkey, it was <span class="pure-visible-sm">a sign that he came in peace. Jesus had come in peace, and the people welcomed him like royalty</span>...
                                         </p>
                                         <a href="./tpk/5-april-2020" class="btn">Explore</a>
                                     </div>
@@ -97,7 +97,7 @@
                                         <h2 class="ktitle" style="text-align: left;">
                                             David the shepherd boy - 22nd March, 2020
                                         </h2>
-                                        <p class="copy" style="font-size: 18px;">Today’s story is about David’s reliance on God in the early years of life. We will see in the weeks to come that David continued to trust the Lord throughout his life...</p>
+                                        <p class="copy" style="font-size: 18px;">Today’s story is about David’s reliance on God in the early years of life. <span class="pure-visible-sm">We will see in the weeks to come that David continued to trust the Lord throughout his life</span>...</p>
                                         <a href="./tpk/22-march-2020" class="btn">Explore</a>
                                     </div>
                                 </div>
