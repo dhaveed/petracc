@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="contenet-hero" style="padding-bottom: 30px; padding-top: 50px;">
-                                <h1>Recent Sermons</h1>
+                                <h1>Recent <br> Couch Sessions </h1>
                                 <p class="mt-15">
                                     Enjoy a recap of our recent sermons from the comfort of wherever you are.</p>
                             </div>
@@ -66,10 +66,10 @@
                     <div class="container">
 
                         <div class="row mb-80">
-                            <div class="col-12 latest-sermon">
+                            <div class="col-12 latest-couch-session">
                                 <!-- <div class="scard mega" style="background-image: url('https://img.youtube.com/vi/SPoUbJjUQtw/0.jpg')">
                                 </div> -->
-                                <iframe class="scard mega" width="1110" height="650" src="https://www.youtube.com/embed/wQpuvOwK6ek?enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                <iframe class="scard mega" width="1110" height="650" src="https://www.youtube.com/embed/jHabXniEnXk?enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
                         </div>
@@ -84,35 +84,35 @@
                                 </div>
                             </div>
                             </div> -->
+                           
                             <div class="col-md-4 social-groups-column">
-                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/SPoUbJjUQtw/0.jpg'); background-size: cover; background-position: center center;">
+                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/gzF55-w14Lk/0.jpg'); background-size: cover; background-position: center center;">
                                     <div class="content">
-                                        <h2 class="stitle">No Fear Here</h2>
+                                        <h2 class="stitle">Soul Safari IV</h2>
                                         <p class="copy"></p>
-                                        <a href="https://youtu.be/SPoUbJjUQtw" target="_blank" class="btn">Watch</a>
+                                        <a href="https://youtu.be/gzF55-w14Lk" target="_blank" class="btn">Watch</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 social-groups-column">
-                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/o2U8rDPN-5Q/0.jpg'); background-size: cover; background-position: center center;">
+                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/p8CABXme7_Y/0.jpg'); background-size: cover; background-position: center center;">
                                     <div class="content">
-                                        <h2 class="stitle">Soul Safari III</h2>
+                                        <h2 class="stitle">Soul Safari II </h2>
                                         <p class="copy"></p>
-                                        <a href="https://www.youtube.com/watch?v=o2U8rDPN-5Q" target="_blank" class="btn">Watch</a>
+                                        <a href="https://youtu.be/p8CABXme7_Y" target="_blank" class="btn">Watch</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 social-groups-column">
-                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/aU0GIhYnVZo/0.jpg'); background-size: cover; background-position: center center;">
+                                <div class="scard" style="background-image: url('https://img.youtube.com/vi/L3aQIvaCfuo/0.jpg'); background-size: cover; background-position: center center;">
                                     <div class="content">
-                                        <h2 class="stitle">Soul Safari</h2>
+                                        <h2 class="stitle">Mid-Week</h2>
                                         <p class="copy"></p>
-                                        <a href="https://youtu.be/aU0GIhYnVZo" target="_blank" class="btn">Watch</a>
+                                        <a href="https://youtu.be/L3aQIvaCfuo" target="_blank" class="btn">Watch</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </div>                     
                     </div>
                 </div>
 

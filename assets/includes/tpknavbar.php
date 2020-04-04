@@ -3,27 +3,27 @@
         <div class="extend-container">
             <div class="inner-header">
                 <div class="main-logoFml">
-                    <img class="dark-logo" src="assets/img/logo/logo-dark.png" alt="" />
-                    <img class="light-logo" src="assets/img/logo/logo.png" alt="" />
+                    <img class="dark-logo" src="./assets/img/logo/logo-dark.png" alt="" />
+                    <img class="light-logo" src="./assets/img/logo/logo.png" alt="" />
                     </a>
                 </div>
             </div>
             <nav class=" accent-menu main-navigation">
                 <ul class="extend-container">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="./about">About</a></li>
+                    <li><a href="./../index">Home</a></li>
+                    <li><a href="./../about">About</a></li>
                     <li class="custom-drop-down">
                         <a href="#">Sessions</a>
                         <ul>
-                            <li><a href="./sermons">Sermons</a></li>
-                            <li><a href="./cafe">Worship Cafés </a></li>
-                            <li><a href="./couch">Couch Sessions</a></li>
+                            <li><a href="./../sermons">Sermons</a></li>
+                            <li><a href="./../cafe">Worship Cafés </a></li>
+                            <li><a href="./../couch">Couch Sessions</a></li>
                         </ul>
                     </li>
-                    <li><a href="./kids">TribePetra Kids</a></li>
-                    <li><a href="./sgroups">Groups</a></li>
+                    <li><a href="./../kids">TribePetra Kids</a></li>
+                    <li><a href="./../sgroups">Groups</a></li>
                     <li><a href="https://paystack.com/pay/petra_give" target="_blank">Online Giving</a></li>
-                    <li><a href="./contact">Contact us</a></li>
+                    <li><a href="./../contact">Contact us</a></li>
                     <!--<li><a href="auth.html">Join / Login </a></li>-->
                 </ul>
             </nav>

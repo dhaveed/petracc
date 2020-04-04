@@ -205,7 +205,7 @@
                         </div> -->
                     </div>
 
-                    <div class="project-page__inner" style="">
+                    <div class="project-page__inner">
                         <div class="h-80">
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
