@@ -153,7 +153,7 @@
                                         </p>
                                     </blockquote>
 
-                                    <h5 class="title-caption" style="margin-bottom: 10px">2. PASSOVER </h5>
+                                    <h5 class="title-caption" style="margin-bottom: 10px">3. PASSOVER </h5>
                                     <p>
                                         <span style="margin-bottom: 5px;">6am / 6pm </span>
                                         <br> (Exodus 12:13,21-24, 1 Cor 5:7)
