@@ -128,7 +128,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-6 kids-week">
+                            <div class="col-sm-12 col-lg-6 col-md-6 kids-week">
                                 <div class="kcard" style="background-image: url('https://img.youtube.com/vi/P5hS0AD1M78/0.jpg'); background-position: center center;">
                                     <div class="content">
                                         <h2 class="ktitle" style="text-align: left;">
@@ -139,7 +139,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-6 kids-week">
+                            <div class="col-sm-12 col-lg-6 col-md-6 kids-week">
                                 <div class="kcard" style="background-image: url('https://img.youtube.com/vi/m2RuRFxJOU0/0.jpg'); background-position: center center;">
                                     <div class="content">
                                         <h2 class="ktitle" style="text-align: left;">
