@@ -97,7 +97,7 @@
     <style>
                 .icon-bar {
                     position: fixed;
-                    top: 97vh;
+                    bottom: 0;
                     -webkit-transform: translateY(-50%);
                     -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
