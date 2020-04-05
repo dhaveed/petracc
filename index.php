@@ -93,6 +93,40 @@
 <body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
 
+
+    <style>
+                .icon-bar {
+                    position: fixed;
+                    bottom: 0;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    z-index: 1000;
+                    }
+
+                    /* Style the icon bar links */
+                    .icon-bar a {
+                    display: block;
+                    text-align: center;
+                    padding: 16px;
+                    transition: all 0.3s ease;
+                    color: white;
+                    font-size: 16px;
+                    }
+
+                    /* Style the social media icons with color, if you want */
+                    .icon-bar a:hover {
+                    background-color: #fff;
+                    color: #000
+                    }
+
+                    .mixlr {
+                    background: #0C8ACD;
+                    color: white;
+                    }
+
+            </style>
+
     <!--<div class="preloader">
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
@@ -105,6 +139,13 @@
             <div class="preloader-progress"></div>
         </div>
     </div>-->
+
+    <div class="icon-bar">
+        <a href="https://www.mixlr.com/petrachristiancentre" target="_blank" class="mixlr">
+            <i class="fas fa-podcast" style="margin-right: 5px;"></i>
+            Join Our Audio Stream
+        </a>
+    </div>
 
     <!-- Nav Bar -->
     <?php include('./assets/includes/navbar.php') ?>
@@ -132,9 +173,12 @@
                                         </p>
                                         <div class="link-custom">
                                             <!-- <a href="./live" class="image-zoom effect-ajax" data-dsn="parallax" data-dsn-ajax="slider" data-toggle="modal" data-src="https://www.youtube.com/embed/p8CABXme7_Y?autoplay=0&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" data-target="#petra-modal"> -->
-                                            <a href="https://live.petracc.org/live" class="image-zoom" data-dsn="parallax" data-dsn-ajax="slider">
+                                            <a href="https://live.petracc.org/live" class="image-zoom mt-10" data-dsn="parallax" data-dsn-ajax="slider">
                                                 <span>Join our live service</span>
                                             </a>
+                                            <!-- <a href="" target="_blank" class="image-zoom mt-10 ml-2" data-dsn="parallax" data-dsn-ajax="slider">
+                                                <span>Join our live service (Audio)</span>
+                                            </a> -->
                                         </div>
 
                                     </div>
@@ -509,6 +553,16 @@
                 })(document, window, 'Chatra');
             </script>
             <!-- /Chatra {/literal} -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162851191-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162851191-1');
+</script>
+
         </div>
     </main>
 

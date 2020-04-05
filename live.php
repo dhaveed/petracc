@@ -211,8 +211,7 @@
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <!-- <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe> -->
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/wQpuvOwK6ek?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
-
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/JRBMNhOmgC4?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
                                        
                                     </div>                                
                                 </div>                                
@@ -226,7 +225,7 @@
                                                 <h4  style="color: #fff;">The Gift of Peace.</h4>
                                                 <br>
                                                 <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                                                <p class="mt-5 text-muted">29 March, 2020</p>
+                                                <p class="mt-5 text-muted">5th April, 2020</p>
                                             </div>
                                         </div>
 
@@ -311,6 +310,16 @@
                 })(document, window, 'Chatra');
             </script>
             <!-- /Chatra {/literal} -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162851191-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162851191-1');
+</script>
+
         </div>
     </main>
 

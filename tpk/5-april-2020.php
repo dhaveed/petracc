@@ -47,7 +47,7 @@
     </div>-->
 
     <!-- Nav Bar -->
-    <?php include('../assets/includes/tpknavbar.php') ?>
+    <?php include('../assets/includes/navbar.php') ?>
     <!-- End Nav Bar -->
 
     <main class="main-root">
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-12 col-lg-6 col-md-6 kids-week">
+                            <div class="col-sm-12 col-lg-6   col-md-6 kids-week">
                                 <div class="kcard" style="background-image: url('https://img.youtube.com/vi/P5hS0AD1M78/0.jpg'); background-position: center center;">
                                     <div class="content">
                                         <h2 class="ktitle" style="text-align: left;">
@@ -139,7 +139,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-12 col-lg-6 col-md-6 kids-week">
+                            <div class="col-sm-12 col-lg-6   col-md-6 kids-week">
                                 <div class="kcard" style="background-image: url('https://img.youtube.com/vi/m2RuRFxJOU0/0.jpg'); background-position: center center;">
                                     <div class="content">
                                         <h2 class="ktitle" style="text-align: left;">
@@ -243,6 +243,16 @@
                     })(document, window, 'Chatra');
                 </script>
                 <!-- /Chatra {/literal} -->
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162851191-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162851191-1');
+</script>
+
             </div>
         </div>
     </main>
