@@ -4,7 +4,7 @@
             <div class="inner-header">
                 <div class="main-logoFml">
                     <img class="dark-logo" src="./assets/img/logo/logo-dark.png" alt="" />
-                    <img class="light-logo" src="./assets/img/logo/logo.png" alt="" />
+                    <img class="light-logo" src="./../tpk/assets/img/logo/logo.png" alt="" />
                     </a>
                 </div>
             </div>
