@@ -2,8 +2,6 @@
 // include('server.php') 
 // $db = mysqli_connect('localhost', 'root', '', 'petracc');
 
-
-
 ?>
 
 
@@ -25,278 +23,169 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link href="assets/css/plugins.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/live.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="assets/css/swal.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 </head>
-<style>
-    /* .modal-dialog {
-        max-width: 1000px;
-        top: 50px;
-        margin: 100px auto;
-    }
-    
-    .modal-body {
-        position: relative;
-        padding: 0px;
-    }
-    .modal-footer{
-        background: #292c2f;
-    }
-    
-    .close {
-        position: absolute;
-        right: -30px;
-        top: 0;
-        z-index: 999;
-        font-size: 2.5rem;
-        font-weight: normal;
-        color: #fff;
-        opacity: 1;
-        border: none!important;
-        background-color: none!important;
-    }
-     */
-    .pro-text h5{
-        font-size: 20px;
-        color: #fff;
-    }
-    .pro-text h4{
-        font-size: 24px;
-        color: #fff;
-        font-weight: 600;
-        line-height: 20px;
-    }
-    .fabs {
-        width: fit-content;
-    float: right;
-    position: absolute;
-    right: 0px;
-    }
-    .stream-icon{
-        background-color: hsla(0,0%,100%,.25);
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-        outline: none;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        margin: 0 20px 0 20px ;
-    }
 
-    .stream-icon i {
-        font-size: 24px; 
-        line-height: 25px;
-        padding: 6px;
-        margin: 5px 5px 5px 7px;
-        color: #fff;  
-    }
-
-    .stream-icon span {
-       color:#fff;
-       font-size: 1.2rem;
-       margin: 15px 0 15px 0;
-       font-weight:bold;
-    }
-
-    .stream-icon:hover{
-        background-color: #751818 !important;
-        color:#751818;
-        opacity: 0.7;
-        transition: 0.4s ease-in-out;
-    }
-
-    .help-block.with-errors {
-        color: red;
-        font-size: 12px;
-    }
-
-    #biodata-form{
-        padding: 40px 0px !important;
-    }
-
-    @media screen and (min-width: 1024px and max-width: 1202) {
-        .project-page__inner {
-            /* max-width: 100vw !important; */
-            max-width: 80vw !important; height: 80vh !important;
-            margin: 0px auto;
-        }
-    }
-
-    @media screen and (min-width: 992px) {
-        .project-page__inner {
-            max-width: 70vw !important; height: 80vh !important;
-            margin: 0px auto;
-        }
-    }
-
-    @media screen and (max-width: 991px) {
-        .project-page__inner {
-            max-width: 100vw !important;
-        }
-    }
-
-    .embed-responsive:after {
-        content: "Live";
-        font-size: 16px;
-        background: #fff;
-        z-index: 10;
-        color: red;
-        position: absolute;
-        bottom: 30px;
-        left: 60px;
-        border-radius: 50px;
-        padding: 10px 15px;
-        font-weight: bold;
-        animation:blinkingText 1.2s infinite;
-    }
-
-    @keyframes blinkingText{
-    0%{     color: red;    }
-    49%{    color: red; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: red;    }
-}
-
-.headefr-fexid {
-    height: 100vh;
-}
-
-    
-</style>
-
-<body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+<body class="v-light dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true" style="overflow: hidden">
     <div data-dsn-temp="light"></div>
 
-    <!--<div class="preloader">
-        <div class="preloader-after"></div>
-        <div class="preloader-before"></div>
-        <div class="preloader-block">
-            <div class="title">Welcome to Petra Christian Centre</div>
-            <div class="percent">0</div>
-            <div class="loading">loading...</div>
-        </div>
-        <div class="preloader-bar">
-            <div class="preloader-progress"></div>
-        </div>
-    </div>-->
-
     <!-- Nav Bar -->
-    <?php include('./assets/includes/navbar.php') ?>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img class="light-logo" src="assets/img/logo/logo.png" alt="" width="60" height="60"/>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span > <i class="fa fa-bars"></i></span>
+            </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Sessions
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./sermons">Sermons</a></a>
+                        <a class="dropdown-item" href="./cafe">Worship Cafés</a>
+                        <a class="dropdown-item" href="./couch">Couch Sessions</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./kids">TribePetra Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sgroups">Groups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://paystack.com/pay/petra_give" target="_blank">Online Giving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- End Nav Bar -->
 
     <main class="main-root">
         <div id="dsn-scrollbar">
-
-
-        <header>
-                <div class="headefr-fexid headefr-fexid-onepage" data-dsn-header="project" >
-                    <div class="bg has-top-bottom" id="dsn-hero-parallax-img" data-dsn-ajax="img">
-                        <!-- <div class=" " data-dsn="video" data-overlay="4">
-                            <video class="bg-image cover-bg dsn-video" poster="assets/img/video-bg.jpg" autoplay loop
-                                muted>
-                                <source src="http://theme.dsngrid.com/video/videos.mp" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                            
-                        </div> -->
-                    </div>
-
-                    <div class="project-page__inner">
-                        <div class="h-80">
-                            <div class="row justify-content-center align-items-center h-1">
-                                <div class="project-title" id="dsn-hero-parallax-title">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <!-- <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe> -->
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/wQpuvOwK6ek?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
-
-                                       
-                                    </div>                                
-                                </div>                                
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="row  mt-30">
-                                        <div class="col-lg-5">
-                                            <div class="pro-text ">
-                                                <h4  style="color: #fff;">The Gift of Peace.</h4>
-                                                <br>
-                                                <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                                                <p class="mt-5 text-muted">29 March, 2020</p>
+            <header>
+                <div class="headefr-fexid" data-dsn-header="project">
+                    <div class="petrac-live__inner">
+                        <div class="h-100">
+                            <div class="row ">
+                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                    <div class="project-title" >
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                           
+                                            <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/wQpvOwK6ek?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div> 
+                                    </div>                              
+                                </div> 
+                                <div class="col-lg-3 col-md-12 col-sm-12" >
+                                    <div class="petra-nav">
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active " data-toggle="pill" href="#note">NOTE</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="pill" href="#Bible">BIBLE</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " data-toggle="pill" href="#schedule">SCHEDULE</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane container active " id="note">
+                                                <div class="pro-text ">
+                                                    <h4 >The Gift of Peace.</h4>
+                                                    <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
+                                                    <p class="text-muted">29 March, 2020</p>
+                                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea quod asperiores sed repellat dolore, 
+                                                        lor
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam.
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quae cupiditate, quo aut modi consequatur! Soluta nam culpa omnis dignissimos dolorem, ipsa totam laborum, veniam tenetur quis ad praesentium non!
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, fugit nam officiis quo ipsam facere accusantium perferendis nihil vitae inventore possimus? Labore eum ab enim vel ducimus blanditiis, rerum nobis.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a quos ad libero, aperiam molestias. Aspernatur impedit quos nostrum culpa itaque eligendi sequi. Quis, in temporibus ad modi fugit porro!
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quibusdam, sed dicta libero consequuntur earum optio delectus ex qui eligendi corrupti iste eveniet placeat asperiores recusandae architecto laboriosam inventore ut.
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam accusamus reiciendis, necessitatibus quo harum delectus voluptatem non, blanditiis voluptates saepe placeat provident ea, assumenda exercitationem nobis sint quaerat iure!
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquid, eius accusantium perspiciatis magni non saepe illum, autem impedit laborum, cumque blanditiis culpa. Vel nisi illum quisquam? Voluptates, voluptatibus magnam!
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vitae placeat corporis? Accusantium dolores illo neque omnis vel ducimus magnam dolore quaerat quis sapiente, fugiat magni quas, ullam esse ratione.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ex amet magni, cum soluta aperiam sapiente expedita temporibus, explicabo, porro assumenda repudiandae? Numquam voluptatibus vel nobis cupiditate exercitationem reprehenderit.
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque cum beatae eius illum facilis in dolor, iusto ut voluptates. Odio, soluta? Numquam veritatis saepe et nostrum minima vitae unde illum?
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus libero incidunt dicta aut officia voluptates inventore architecto culpa ipsum sit aspernatur ab, consequuntur repellendus sint vel dolores laborum odio iure!
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus impedit alias minima, aliquam praesentium laborum eum repellendus doloribus incidunt, consectetur sed sapiente tenetur reiciendis, labore voluptates eos omnis molestias.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente, ipsam sed rem eligendi deserunt iusto quo. Voluptates autem accusantium doloribus exercitationem culpa ullam fugit beatae odio aut. Culpa, dolore!
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel sequi fugit aliquid. Veniam illum a nam, omnis totam, corrupti eveniet et, eos officia sunt quo minus in esse hic natus.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae autem sed facilis atque. Nesciunt nulla officia beatae enim. Velit nobis ab exercitationem cumque autem in ratione nisi illo voluptatem nihil.
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur id soluta non sed ipsum natus inventore reprehenderit officia, similique sit nihil? Obcaecati vel, eum sint sunt expedita quisquam deleniti.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="col-lg-7 ">
-                                            <div class="fabs">
-                                                <a href="#" class="stream-icon" data-toggle="modal"  data-target="#petra-modal">
-                                                    <i class="fa fa-bell-o "></i>
-                                                    <span > Join </span>
-                                                </a>
-                                                <a href="https://paystack.com/pay/petra_give" class="stream-icon">
-                                                    <i class="fa fa-heart-o "></i>
-                                                    <span > Give </span>
-                                                </a>
-                                                <a href="#" class="stream-icon">
-                                                    <i class="fa fa-send-o "></i>
-                                                    <span > Share</span>
-                                                </a> 
+                                            <div class="tab-pane container fade bible" id="Bible">
+                                            <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe"></iframe>
+                                            </div>
+                                            <div class="tab-pane container fade" id="schedule">
+                                                 <div class=" mt-5">
+                                                     <!-- <form class="form-inline">
+                                                         <div class="form-group">
+                                                             <label> Timezone:  </label>
+                                                             <select class="form-control ml-1" id="">
+                                                                 <option>adipisicing </option>
+                                                                 <option>1</option>
+                                                                 <option>1</option>
+                                                             </select>
+                                                         </div>
+                                                     </form>    -->
+                                                     <div class="live-schedule">
+                                                         <h5>Sunday Service</h5>
+                                                         <div class="live-schedule-card">
+                                                            <div class="live-schedule-content">
+                                                                <div class="live-schedule-time" style="margin-top:10px;">6:30pm</div>
+                                                            </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="live-schedule">
+                                                         <h5>Wednessday Service</h5>
+                                                         <div class="live-schedule-card">
+                                                            <div class="live-schedule-content">
+                                                                <div class="live-schedule-time">9:00am</div>
+                                                                <small >Couch Session</small>
+                                                            </div>
+                                                         </div>
+                                                     </div>
+                                                     <div class="live-schedule">
+                                                         <h5>Saturday Service</h5>
+                                                         <div class="live-schedule-card">
+                                                            <div class="live-schedule-content">
+                                                                <div class="live-schedule-time">6:00pm</div>
+                                                                <small >Worship café</small>
+                                                            </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </header>
-
-            <style>
-                .icon-bar {
-                    position: fixed;
-                    bottom: 0%;
-                    -webkit-transform: translateY(-50%);
-                    -ms-transform: translateY(-50%);
-                    transform: translateY(-50%);
-                    }
-
-                    /* Style the icon bar links */
-                    .icon-bar a {
-                    display: block;
-                    text-align: center;
-                    padding: 16px;
-                    transition: all 0.3s ease;
-                    color: white;
-                    font-size: 16px;
-                    }
-
-                    /* Style the social media icons with color, if you want */
-                    .icon-bar a:hover {
-                    background-color: #fff;
-                    color: #000
-                    }
-
-                    .mixlr {
-                    background: #0C8ACD;
-                    color: white;
-                    }
-
-            </style>
-
-
-            <!-- audio alt ->
-            <div class="icon-bar">
-                <a href="#" class="mixlr">
-                    <i class="fas fa-podcast" style="margin-right: 5px;"></i>
-                    Listen on Mixlr
-                </a>
-            </div>
-            <!-- /audio alt -->
-
+           
             <!-- Chatra {literal} -->
             <script>
                 (function(d, w, c) {
@@ -331,7 +220,7 @@
                                         
                                         <div class="input__wrap controls ">
                                             <div class="form-group">
-                                                <div class="entry">
+                                                <div class="entr">
                                                     <label>Name</label>
                                                     <input id="form_name" type="text" name="name" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
                                                 </div>
@@ -339,7 +228,7 @@
                                             </div>
                                             <br>
                                             <div class="form-group">
-                                                <div class="entry">
+                                                <div class="enty">
                                                     <label>Email</label>
                                                     <input id="form_email" type="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" placeholder="Type your Email Address" required="required" data-error="Valid email is required.">
                                                 </div>
@@ -347,7 +236,7 @@
                                             </div>
                                             <br>
                                             <div class="form-group">
-                                                <div class="entry">
+                                                <div class="enty">
                                                     <label>Phone</label>
                                                     <input id="form_phone" type="text" name="phone" value="<?php if(isset($_POST['phone'])) echo $_POST['phone']; ?>" placeholder="Type your Phone number" required="required" data-error="Phone number is required.">
                                                 </div>

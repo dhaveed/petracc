@@ -117,7 +117,7 @@
                     /* Style the social media icons with color, if you want */
                     .icon-bar a:hover {
                     background-color: #fff;
-                    color: #000
+                    color: #000;
                     }
 
                     .mixlr {
