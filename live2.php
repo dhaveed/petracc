@@ -2,6 +2,8 @@
 // include('server.php') 
 // $db = mysqli_connect('localhost', 'root', '', 'petracc');
 
+
+
 ?>
 
 
@@ -24,26 +26,23 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link href="assets/css/live.css" rel="stylesheet" />
-    
     <link rel="stylesheet" href="assets/css/swal.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 </head>
 
-<body class="v-light dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true" style="overflow: hidden">
+<body class="v-light dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
     <div data-dsn-temp="light"></div>
-
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
             <a class="navbar-brand" href="#">
-                <img class="light-logo" src="assets/img/logo/logo.png" alt="" width="60" height="60"/>
+                <img class="light-logo ml-3" src="assets/img/logo/logo.png" alt="" width="55" height="55"/>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
                 <span > <i class="fa fa-bars"></i></span>
             </button>
-        <!-- Links -->
         <div class="collapse navbar-collapse" id="collapse_target">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav  ml-auto">
                 <li class="nav-item ">
                     <a class="nav-link" href="index">Home</a>
                 </li>
@@ -79,24 +78,21 @@
 
     <main class="main-root">
         <div id="dsn-scrollbar">
-            <header>
-                <div class="headefr-fexid" data-dsn-header="project">
-                    <div class="petrac-live__inner">
-                        <div class="h-100">
-                            <div class="row ">
-                                <div class="col-lg-9 col-md-12 col-sm-12">
-                                    <div class="project-title" >
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                           
-                                            <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/wQpvOwK6ek?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div> 
-                                    </div>                              
-                                </div> 
-                                <div class="col-lg-3 col-md-12 col-sm-12" >
+                <header>            
+                    <div class="live-inner">
+                        <div class="row ">
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                                <div class="live-video" >
+                                    <div class="embed-responsive embed-responsive-16by9" >
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
+                                    </div> 
+                                </div>                              
+                            </div> 
+                            <div class="col-lg-3 col-md-12 col-sm-12" >
                                     <div class="petra-nav">
                                         <ul class="nav nav-pills">
                                             <li class="nav-item">
-                                                <a class="nav-link active " data-toggle="pill" href="#note">NOTE</a>
+                                                <a class="nav-link active  " data-toggle="pill" href="#note">NOTE</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" data-toggle="pill" href="#Bible">BIBLE</a>
@@ -116,21 +112,7 @@
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
                                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
                                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam.
-                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quae cupiditate, quo aut modi consequatur! Soluta nam culpa omnis dignissimos dolorem, ipsa totam laborum, veniam tenetur quis ad praesentium non!
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, fugit nam officiis quo ipsam facere accusantium perferendis nihil vitae inventore possimus? Labore eum ab enim vel ducimus blanditiis, rerum nobis.
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a quos ad libero, aperiam molestias. Aspernatur impedit quos nostrum culpa itaque eligendi sequi. Quis, in temporibus ad modi fugit porro!
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quibusdam, sed dicta libero consequuntur earum optio delectus ex qui eligendi corrupti iste eveniet placeat asperiores recusandae architecto laboriosam inventore ut.
-                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam accusamus reiciendis, necessitatibus quo harum delectus voluptatem non, blanditiis voluptates saepe placeat provident ea, assumenda exercitationem nobis sint quaerat iure!
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquid, eius accusantium perspiciatis magni non saepe illum, autem impedit laborum, cumque blanditiis culpa. Vel nisi illum quisquam? Voluptates, voluptatibus magnam!
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor vitae placeat corporis? Accusantium dolores illo neque omnis vel ducimus magnam dolore quaerat quis sapiente, fugiat magni quas, ullam esse ratione.
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi ex amet magni, cum soluta aperiam sapiente expedita temporibus, explicabo, porro assumenda repudiandae? Numquam voluptatibus vel nobis cupiditate exercitationem reprehenderit.
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque cum beatae eius illum facilis in dolor, iusto ut voluptates. Odio, soluta? Numquam veritatis saepe et nostrum minima vitae unde illum?
-                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus libero incidunt dicta aut officia voluptates inventore architecto culpa ipsum sit aspernatur ab, consequuntur repellendus sint vel dolores laborum odio iure!
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus impedit alias minima, aliquam praesentium laborum eum repellendus doloribus incidunt, consectetur sed sapiente tenetur reiciendis, labore voluptates eos omnis molestias.
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente, ipsam sed rem eligendi deserunt iusto quo. Voluptates autem accusantium doloribus exercitationem culpa ullam fugit beatae odio aut. Culpa, dolore!
-                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel sequi fugit aliquid. Veniam illum a nam, omnis totam, corrupti eveniet et, eos officia sunt quo minus in esse hic natus.
-                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae autem sed facilis atque. Nesciunt nulla officia beatae enim. Velit nobis ab exercitationem cumque autem in ratione nisi illo voluptatem nihil.
-                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur id soluta non sed ipsum natus inventore reprehenderit officia, similique sit nihil? Obcaecati vel, eum sint sunt expedita quisquam deleniti.
+                                                     
                                                     </p>
                                                 </div>
                                             </div>
@@ -138,17 +120,7 @@
                                             <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe"></iframe>
                                             </div>
                                             <div class="tab-pane container fade" id="schedule">
-                                                 <div class=" mt-5">
-                                                     <!-- <form class="form-inline">
-                                                         <div class="form-group">
-                                                             <label> Timezone:  </label>
-                                                             <select class="form-control ml-1" id="">
-                                                                 <option>adipisicing </option>
-                                                                 <option>1</option>
-                                                                 <option>1</option>
-                                                             </select>
-                                                         </div>
-                                                     </form>    -->
+                                                 <div>  
                                                      <div class="live-schedule">
                                                          <h5>Sunday Service</h5>
                                                          <div class="live-schedule-card">
@@ -180,12 +152,20 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </header>
-           
+                </header>    
+
+           <!-- audio alt  -->
+                <!-- <div class="icon-bar">
+                    <a href="#" class="mixlr" data-toggle="modal"  data-target="#petra-modal">
+                        <i class="fas " style="margin-right: 5px;"></i>
+                        Join
+                    </a>
+                </div> -->
+            <!-- /audio alt -->
+
+
             <!-- Chatra {literal} -->
             <script>
                 (function(d, w, c) {
@@ -200,6 +180,16 @@
                 })(document, window, 'Chatra');
             </script>
             <!-- /Chatra {/literal} -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162851191-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-162851191-1');
+            </script>
+
         </div>
     </main>
 
@@ -220,7 +210,7 @@
                                         
                                         <div class="input__wrap controls ">
                                             <div class="form-group">
-                                                <div class="entr">
+                                                <div class="entry">
                                                     <label>Name</label>
                                                     <input id="form_name" type="text" name="name" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>" placeholder="Type your Full Name" required="required" data-error="Full Name is required.">
                                                 </div>
@@ -228,7 +218,7 @@
                                             </div>
                                             <br>
                                             <div class="form-group">
-                                                <div class="enty">
+                                                <div class="entry">
                                                     <label>Email</label>
                                                     <input id="form_email" type="email" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" placeholder="Type your Email Address" required="required" data-error="Valid email is required.">
                                                 </div>
@@ -236,7 +226,7 @@
                                             </div>
                                             <br>
                                             <div class="form-group">
-                                                <div class="enty">
+                                                <div class="entry">
                                                     <label>Phone</label>
                                                     <input id="form_phone" type="text" name="phone" value="<?php if(isset($_POST['phone'])) echo $_POST['phone']; ?>" placeholder="Type your Phone number" required="required" data-error="Phone number is required.">
                                                 </div>
