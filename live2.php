@@ -118,7 +118,7 @@
                                                      
                                                     </p>
                                                 </div> -->
-                                                <div id="arena-live" data-publisher="petra-christian-center" data-event="y3ah" data-version="2"></div><script async src="https://go.arena.im/public/js/arenalib.js?p=petra-christian-center&e=y3ah"></script>
+                                                <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                                             </div>
                                             <div class="tab-pane container fade bible" id="note">
                                                 <div class="pro-text ">
