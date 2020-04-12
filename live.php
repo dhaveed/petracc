@@ -210,9 +210,7 @@
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <!-- <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe> -->
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/JRBMNhOmgC4?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
-                                       
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/O1GU8FgFxHU?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
                                     </div>                                
                                 </div>                                
                             </div>
@@ -222,10 +220,10 @@
                                     <div class="row  mt-30">
                                         <div class="col-lg-5">
                                             <div class="pro-text ">
-                                                <h4  style="color: #fff;">The Gift of Peace.</h4>
+                                                <h4  style="color: #fff;">Easter Sunday Service</h4>
                                                 <br>
-                                                <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                                                <p class="mt-5 text-muted">5th April, 2020</p>
+                                                <h5 class="text-muted" ><!--Ministering:--><strong> Pastor Ayo Ajani</strong></h5>
+                                                <p class="mt-5 text-muted">12th April, 2020</p>
                                             </div>
                                         </div>
 
