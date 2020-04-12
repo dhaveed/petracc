@@ -41,12 +41,13 @@ body {
 .petra-nav .nav-pills a {
     color: rgb(159, 159, 160);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
 }
 
 .petra-nav .nav-pills .nav-link {
-    padding: .5rem .5rem;
+    padding: .5rem .4rem;
+    text-transform: uppercase;
 }
 
 .petra-nav .nav-pills .active {
@@ -199,7 +200,7 @@ input[type="submit"] {
 
 @media only screen and (max-width: 400px) {
     .tab-content {
-        height: 5000px !important;
+        height: 500px !important;
     }
     .live-video {
         width: 100%;
