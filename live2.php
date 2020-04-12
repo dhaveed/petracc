@@ -92,7 +92,10 @@
                                     <div class="petra-nav">
                                         <ul class="nav nav-pills">
                                             <li class="nav-item">
-                                                <a class="nav-link active  " data-toggle="pill" href="#note">NOTE</a>
+                                                <a class="nav-link active  " data-toggle="pill" href="#chat">Chat</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="pill" href="#note">NOTE</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" data-toggle="pill" href="#Bible">BIBLE</a>
@@ -102,7 +105,22 @@
                                             </li>
                                         </ul>
                                         <div class="tab-content">
-                                            <div class="tab-pane container active " id="note">
+                                            <div class="tab-pane container active " id="chat">
+                                                <!-- <div class="pro-text ">
+                                                    <h4 >The Gift of Peace.</h4>
+                                                    <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
+                                                    <p class="text-muted">29 March, 2020</p>
+                                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea quod asperiores sed repellat dolore, 
+                                                        lor
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam.
+                                                     
+                                                    </p>
+                                                </div> -->
+                                                <div id="arena-live" data-publisher="petra-christian-center" data-event="y3ah" data-version="2"></div><script async src="https://go.arena.im/public/js/arenalib.js?p=petra-christian-center&e=y3ah"></script>
+                                            </div>
+                                            <div class="tab-pane container fade bible" id="note">
                                                 <div class="pro-text ">
                                                     <h4 >The Gift of Peace.</h4>
                                                     <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
@@ -117,7 +135,7 @@
                                                 </div>
                                             </div>
                                             <div class="tab-pane container fade bible" id="Bible">
-                                            <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe"></iframe>
+                                                <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe"></iframe>
                                             </div>
                                             <div class="tab-pane container fade" id="schedule">
                                                  <div>  
