@@ -30,9 +30,9 @@ body {
 }
 
 .petra-nav {
-    padding: 5px;
+    padding: 3px;
     width: 100%;
-    height: 100%;
+    height: 500px;
     text-align: left;
     background-color: #fff;
     position: relative;
@@ -41,7 +41,12 @@ body {
 .petra-nav .nav-pills a {
     color: rgb(159, 159, 160);
     font-weight: 600;
+    font-size: 15px;
     text-align: left;
+}
+
+.petra-nav .nav-pills .nav-link {
+    padding: .5rem .5rem;
 }
 
 .petra-nav .nav-pills .active {
@@ -51,8 +56,7 @@ body {
 
 .tab-content {
     text-align: justify;
-    height: 500px;
-    overflow-y: scroll;
+    height: 100%;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -81,37 +85,9 @@ body {
     line-height: 30px;
 }
 
-.icon-bar {
-    position: fixed;
-    bottom: 0%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-
-/* Style the icon bar links */
-
-.icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 16px;
-}
-
-
-/* Style the social media icons with color, if you want */
-
-.icon-bar a:hover {
-    background-color: #fff;
-    color: #000
-}
-
-.mixlr {
-    background: #0C8ACD;
-    color: white;
+.note {
+    overflow-y: scroll;
+    height: 500px;
 }
 
 .live-schedule {
@@ -157,11 +133,73 @@ body {
 
 .bible .bible-iframe {
     overflow-y: hidden;
+    height: 500px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #3535359c;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.help-block.with-errors {
+    color: red;
+    font-size: 12px;
+}
+
+label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding-right: 30px;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+input[type="submit"] {
+    position: relative;
+    width: auto;
+    color: #fff;
+    background-color: #090909;
+    -moz-appearance: none;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 20px 41px;
+    margin-top: 0;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -o-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 400px) {
-    .petra-nav .tab-content {
-        max-height: 500px;
+    .tab-content {
+        height: 5000px !important;
     }
     .live-video {
         width: 100%;
@@ -169,19 +207,11 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
-    .petra-nav .tab-content {
-        max-height: 500px;
+    .tab-content {
+        height: 5000px;
     }
     .live-video {
         width: 100%;
-    }
-    .icon-bar {
-        position: fixed;
-        bottom: 20%;
-        right: 80%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
 }
 
@@ -199,6 +229,19 @@ body {
     }
     .live-video {
         width: 100%;
+    }
+    .entry {
+        display: block;
+    }
+    label {
+        -webkit-box-flex: unset;
+        -ms-flex: unset;
+        flex: unset;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .entry input {
+        height: 100%;
     }
 }
 

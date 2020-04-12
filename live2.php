@@ -100,9 +100,12 @@
                                             <li class="nav-item">
                                                 <a class="nav-link " data-toggle="pill" href="#schedule">SCHEDULE</a>
                                             </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link "  data-toggle="modal"  data-target="#petra-modal" href="#">JOIN</a>
+                                            </li>
                                         </ul>
                                         <div class="tab-content">
-                                            <div class="tab-pane container active " id="note">
+                                            <div class="tab-pane container note active " id="note">
                                                 <div class="pro-text ">
                                                     <h4 >The Gift of Peace.</h4>
                                                     <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
@@ -119,7 +122,7 @@
                                             <div class="tab-pane container fade bible" id="Bible">
                                             <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe"></iframe>
                                             </div>
-                                            <div class="tab-pane container fade" id="schedule">
+                                            <div class="tab-pane container schedule fade" id="schedule">
                                                  <div>  
                                                      <div class="live-schedule">
                                                          <h5>Sunday Service</h5>
@@ -198,7 +201,7 @@
         <div class="modal-dialog modal-dialog-centered " role="document">
             <div class="modal-content" style="padding-top: 30px;">
                 <div class="modal-body">
-                <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">×</span>
+                <span class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true" style="cursor: pointer;">×</span>
                     <div class="row" id="petra-join">
                         <div class="col-sm-12">
                             <h3 align="center ">Join eFam Church</h3>
@@ -234,7 +237,7 @@
                                             </div>
                                             <br>
                                             <div class="image-zoom" data-dsn="parallax">
-                                                <button type="submit" name="submit_biodata">Submit <i class="fa fa-circle-o-notch fa-spin ml-10 spinning"></i></button>
+                                                <input type="submit" name="submit_biodata"><i class="fa fa-circle-o-notch fa-spin ml-10 spinning"></i>
                                             </div>
                                         </div>
                                     </div>
