@@ -62,6 +62,21 @@
                 <div class="root-blog" style="padding-bottom: 150px;">
                     <div class="container">
 
+                    <div class="row social-groups-row">
+                        <div class="col-12 kids-week">
+                            <div class="kcard" style="background-image: url('./assets/img/risen.jpg')">
+                                <div class="content">
+                                    <h2 class="ktitle" style="text-align: left;">
+                                        Jesus is Alive. - 12th April, 2020
+                                    </h2>
+                                    <p class="copy" style="font-size: 18px;">
+                                        [ Matthew 28:1-10 ]
+                                    </p>
+                                    <a href="./tpk/12-april-2020" class="btn">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row social-groups-row">
                             <div class="col-12 kids-week">
                                 <div class="kcard" style="background-image: url('./assets/img/kids-3.jpg')">
