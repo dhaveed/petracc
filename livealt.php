@@ -34,7 +34,6 @@
             main {
                 display: flex;
                 height: 100%;
-                background: gray;
                 flex-direction: column;
             }
         </style>
@@ -115,7 +114,7 @@
                 }
             </style>
 
-            <section class="main-content row-flex">
+            <section class="main-content row-flex live-row">
                 <div class="video-box">
                     <div class="tv">
                         <iframe  class="stream-frame" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
@@ -123,7 +122,7 @@
                 </div>
                 <div class="util-box">
                     <div class="petra-nav">
-                        <ul class="nav nav-pills" style='background-color: rgb(246, 246, 246); padding-top: 0px; padding-bottom: 0px;'>
+                        <ul class="nav nav-pills" style='background-color: rgb(246, 246, 246); padding-top: 0px; padding-bottom: 0px;  overflow-x: auto'>
                             <li class="nav-item">
                                 <a class="nav-link  " data-toggle="pill" href="#chat">Chat</a>
                             </li>
