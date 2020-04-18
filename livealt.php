@@ -141,7 +141,7 @@
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane container " id="chat">
+                            <div class="tab-pane chat container " id="chat">
                                 <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                             </div>
                             <div class="tab-pane container fade note" id="note">

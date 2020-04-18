@@ -290,7 +290,7 @@ input[type="submit"] {
       border: 1px solid royalblue;
   }
 
-  .tab-pane.bible {
+  .tab-pane.bible, .tab-pane.chat {
       padding: 0px;
   }
 
