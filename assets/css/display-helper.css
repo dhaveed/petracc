@@ -1,0 +1,41 @@
+/* pure-hidden-xs */
+@media screen and (max-width:567px) {
+    .visible-sm{display:none}
+    .visible-md{display:none}
+    .visible-lg{display:none}
+    .visible-xl{display:none}
+    .hidden-xs{display:none}
+}
+/* pure-hidden-sm */
+@media screen and (min-width:568px) and (max-width:767px) {
+    .visible-xs{display:none}
+    .visible-md{display:none}
+    .visible-lg{display:none}
+    .visible-xl{display:none}
+    .hidden-sm{display:none}
+}
+/* pure-hidden-md */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .visible-xs{display:none}
+    .visible-sm{display:none}
+    .visible-lg{display:none}
+    .visible-xl{display:none}
+    .hidden-md{display:none}
+}
+/* pure-hidden-lg */
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .visible-xs{display:none}
+    .visible-sm{display:none}
+    .visible-md{display:none}
+    .visible-xl{display:none}
+    .hidden-lg{display:none}
+}
+/* pure-hidden-xl */
+@media screen and (min-width:1280px) {
+    .visible-xs{display:none}
+    .visible-sm{display:none}
+    .visible-md{display:none}
+    .visible-lg{display:none}
+    .hidden-xl{display:none}
+}
+

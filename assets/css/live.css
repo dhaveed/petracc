@@ -290,6 +290,20 @@ input[type="submit"] {
     }
 }
 
+@media screen and (max-width: 567px) {
+    .main-content.row-flex div.video-box {
+        flex: 2 !important;
+    }
+
+    .main-content.row-flex div.util-box {
+        flex: 3 !important;
+    }
+
+    .video-box{
+        min-height: 260px;
+    }
+}
+
 /* @media only screen and (min-width: 1280px) {
     .panel-right {
         padding-left: 2px;

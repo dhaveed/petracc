@@ -25,6 +25,7 @@
         <link href="assets/css/live.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/swal.min.css">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="assets/css/display-helper.css">
 
     </head>
 
@@ -40,7 +41,7 @@
 
         <main>
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark hidden-sm hidden-md hidden-xs">
                 <a class="navbar-brand" href="#">
                     <img class="light-logo ml-3" src="assets/img/logo/logo.png" alt="" width="55" height="55" />
                 </a>
