@@ -114,7 +114,7 @@
                 }
             </style>
 
-            <section class="main-content row-flex live-row">
+            <section class="main-content row-flex">
                 <div class="video-box">
                     <div class="tv">
                         <iframe  class="stream-frame" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
