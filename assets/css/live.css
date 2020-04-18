@@ -306,8 +306,8 @@ input[type="submit"] {
         flex: 3 !important;
     }
 
-    .video-box{
-        /* min-height: 260px; */
+    .tv{
+       height: 35vh;
     }
 }
 
