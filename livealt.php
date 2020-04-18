@@ -86,7 +86,7 @@
             <style>
                 .main-content.row-flex {
                     display: flex;
-                    border: 1px solid red;
+                    /* border: 1px solid red; */
                     height: 100%;
                     max-height: 100%;
                     background: gray
@@ -145,7 +145,7 @@
                                 <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                             </div>
                             <div class="tab-pane container fade note" id="note">
-                                <div class="pro-text " style="overflow: auto; height: 100%;">
+                                <!-- <div class="pro-text " style="overflow: auto; height: 90%;"> -->
                                     <h4 >The Gift of Peace.</h4>
                                     <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
                                     <p class="text-muted">29 March, 2020</p>
@@ -166,7 +166,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
                                         Lorem ipsum 
                                     </p>
-                                </div>
+                                <!-- </div> -->
                             </div>
                             <div class="tab-pane container fade bible" id="Bible">
                                 <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe" style="width: inherit;"></iframe>

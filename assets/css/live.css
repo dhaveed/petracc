@@ -81,13 +81,13 @@ section.streamer {
     max-height: initial;
 }
 
-.pro-text h5 {
+.note h5 {
     font-size: 17px;
     color: #000;
     overflow-x: none;
 }
 
-.pro-text h4 {
+.note h4 {
     font-size: 22px;
     color: #000;
     font-weight: 600;
@@ -95,7 +95,7 @@ section.streamer {
     margin: 30px 0 10px 0;
 }
 
-.pro-text p {
+.note p {
     font-size: 15px;
     line-height: 30px;
 }
@@ -281,13 +281,13 @@ input[type="submit"] {
   }
 
   .tab-content {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       /* overflow-y: scroll; */
       display: flex;
   }
 
   .tab-pane{
-      border: 1px solid royalblue;
+      /* border: 1px solid royalblue; */
   }
 
   .tab-pane.bible, .tab-pane.chat {
@@ -297,10 +297,7 @@ input[type="submit"] {
   .note {
     width: 100%;
     height: 90%;
-  }
-
-  .note .pro-text{
-      height: inherit;
+    overflow: auto;
   }
 
   .bible .bible-iframe {
