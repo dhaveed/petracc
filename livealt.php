@@ -41,7 +41,7 @@
 
         <main>
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark hidden-sm hidden-md hidden-xs">
                 <a class="navbar-brand" href="#">
                     <img class="light-logo ml-3" src="assets/img/logo/logo.png" alt="" width="55" height="55" />
                 </a>
@@ -82,6 +82,8 @@
                 </div>
             </nav>
             <!-- End Nav Bar -->
+
+            
 
             <style>
                 .main-content.row-flex {
@@ -125,23 +127,23 @@
                     <div class="petra-nav">
                         <ul class="nav nav-pills" style='background-color: rgb(246, 246, 246); padding-top: 0px; padding-bottom: 0px;  overflow-x: auto'>
                             <li class="nav-item">
-                                <a class="nav-link  " data-toggle="pill" href="#chat">Chat</a>
+                                <a class="nav-link active" data-toggle="pill" href="#chat">Chat</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#note">NOTE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#Bible">BIBLE</a>
+                                <a class="nav-link" data-toggle="pill" href="#Bible">BIBLE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-toggle="pill" href="#schedule">SCHEDULE</a>
+                                <a class="nav-link" data-toggle="pill" href="#schedule">SCHEDULE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " data-toggle="modal" data-target="#petra-modal" href="#">JOIN</a>
+                                <a class="nav-link" data-toggle="modal" data-target="#petra-modal" href="#">JOIN</a>
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane chat container " id="chat">
+                            <div class="tab-pane fade chat container active show" id="chat">
                                 <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                             </div>
                             <div class="tab-pane container fade note" id="note">
@@ -155,16 +157,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam.
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
-                                        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
-                                        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
-                                        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
-                                        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
-                                        Lorem ipsum 
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. The END!!!
                                     </p>
                                 <!-- </div> -->
                             </div>
