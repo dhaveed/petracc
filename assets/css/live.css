@@ -64,9 +64,9 @@ body {
     border-radius: 0px;
     color: #000;
 }
+
 section.streamer {
     background: yellow;
-
 }
 
 .tab-content {
@@ -146,8 +146,6 @@ section.streamer {
     /* height: 500px; */
 }
 
-
-
 .form-group {
     margin-bottom: 1rem;
 }
@@ -216,7 +214,6 @@ input[type="submit"] {
     .live-video {
         width: 100%;
     }
-
     .tv {
         height: 280px;
     }
@@ -264,6 +261,7 @@ input[type="submit"] {
     }
 }
 
+
 /* .main-content.row-flex {
     flex-direction: column;
 } */
@@ -273,25 +271,21 @@ input[type="submit"] {
         width: 48px;
         height: 48px;
     }
-    .main-content.row-flex { 
+    .main-content.row-flex {
         flex-direction: column;
     }
-
     .main-content.row-flex div.video-box {
         flex: 1.5 !important;
     }
-
     .main-content.row-flex div.util-box {
         flex: 2 !important;
     }
-
 }
 
 @media screen and (max-width: 639px) {
     .main-content.row-flex div.video-box {
         flex: 2 !important;
     }
-
     .main-content.row-flex div.util-box {
         flex: 3 !important;
     }
@@ -301,15 +295,21 @@ input[type="submit"] {
     .main-content.row-flex div.video-box {
         flex: 2 !important;
     }
-
     .main-content.row-flex div.util-box {
         flex: 3 !important;
     }
-
-    .tv{
-       height: 35vh;
+    .tv {
+        height: 35vh;
     }
 }
+
+@media screen and (max-width:400px and max-height:812px) {
+    .video-box div.tv .stream-frame {
+        width: 100%;
+        height: 50%;
+    }
+}
+
 
 /* @media only screen and (min-width: 1280px) {
     .panel-right {
@@ -329,30 +329,30 @@ input[type="submit"] {
     position: relative;
 }
 
+.tab-content {
+    /* border: 1px solid red; */
+    /* overflow-y: scroll; */
+    display: flex;
+}
 
-  .tab-content {
-      /* border: 1px solid red; */
-      /* overflow-y: scroll; */
-      display: flex;
-  }
+.tab-pane {
+    /* border: 1px solid royalblue; */
+}
 
-  .tab-pane{
-      /* border: 1px solid royalblue; */
-  }
+.tab-pane.bible,
+.tab-pane.chat {
+    padding: 0px;
+}
 
-  .tab-pane.bible, .tab-pane.chat {
-      padding: 0px;
-  }
-
-  .note {
+.note {
     width: 100%;
     height: 90%;
     overflow: auto;
-  }
+}
 
-  .bible .bible-iframe, .chat .chat-iframe {
+.bible .bible-iframe,
+.chat .chat-iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
-
