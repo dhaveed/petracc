@@ -206,27 +206,27 @@
                 <div class="petra-nav">
                     <ul class="nav nav-pills" style='background-color: rgb(246, 246, 246); padding-top: 0px; padding-bottom: 0px;  overflow-x: auto'>
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#chat-mobile">Chat</a>
+                            <a class="nav-link active" data-toggle="pill" href="#chat">Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#note-mobile">NOTE</a>
+                            <a class="nav-link" data-toggle="pill" href="#note">NOTE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#Bible-mobile">BIBLE</a>
+                            <a class="nav-link" data-toggle="pill" href="#Bible">BIBLE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#schedule-mobile">SCHEDULE</a>
+                            <a class="nav-link" data-toggle="pill" href="#schedule">SCHEDULE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" data-target="#petra-modal" href="#">JOIN</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade chat container active show" id="chat-mobile">
+                        <div class="tab-pane fade chat container active show" id="chat">
                             <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div>
                             <script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                         </div>
-                        <div class="tab-pane container fade note" id="note-mobile">
+                        <div class="tab-pane container fade note" id="note">
                             <!-- <div class="pro-text " style="overflow: auto; height: 90%;"> -->
                             <h4>The Gift of Peace.</h4>
                             <h5 class="text-muted">Ministering:<strong> Pastor Ayo Ajani</strong></h5>
@@ -235,10 +235,10 @@
                             </p>
                             <!-- </div> -->
                         </div>
-                        <div class="tab-pane container fade bible" id="Bible-mobile">
+                        <div class="tab-pane container fade bible" id="Bible">
                             <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0" class="bible-iframe" style="width: inherit;"></iframe>
                         </div>
-                        <div class="tab-pane container schedule fade" id="schedule-mobile">
+                        <div class="tab-pane container schedule fade" id="schedule">
                             <div>
                                 <div class="live-schedule">
                                     <h5>Sunday Service</h5>
