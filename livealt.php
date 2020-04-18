@@ -39,7 +39,7 @@
             }
         </style>
 
-        <main class="hidden-xs hidden-sm hidden-md">
+        <main>
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <a class="navbar-brand" href="#">
@@ -83,6 +83,8 @@
             </nav>
             <!-- End Nav Bar -->
 
+            
+
             <style>
                 .main-content.row-flex {
                     display: flex;
@@ -100,17 +102,16 @@
                 .main-content.row-flex div.util-box {
                     flex: 0.55;
                 }
-                
+
                 .video-box div.tv {
                     flex: 1;
                 }
-                
-                .video-box div.tv .stream-frame {
+
+                .video-box div.tv .stream-frame{
                     width: 100%;
                     height: 100%;
                     border: none;
                 }
-                
                 .pro-text h4 {
                     margin-top: 15px;
                 }
@@ -119,7 +120,7 @@
             <section class="main-content row-flex">
                 <div class="video-box">
                     <div class="tv">
-                        <iframe class="stream-frame" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
+                        <iframe  class="stream-frame" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
                     </div>
                 </div>
                 <div class="util-box">
@@ -143,47 +144,52 @@
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane fade chat container active show" id="chat">
-                                <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div>
-                                <script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
+                                <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
                             </div>
                             <div class="tab-pane container fade note" id="note">
                                 <!-- <div class="pro-text " style="overflow: auto; height: 90%;"> -->
-                                <h4>The Gift of Peace.</h4>
-                                <h5 class="text-muted">Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                                <p class="text-muted">29 March, 2020</p>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea quod asperiores sed repellat dolore, lor Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. The END!!!
-                                </p>
+                                    <h4 >The Gift of Peace.</h4>
+                                    <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
+                                    <p class="text-muted">29 March, 2020</p>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea quod asperiores sed repellat dolore, 
+                                        lor
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero?
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. The END!!!
+                                    </p>
                                 <!-- </div> -->
                             </div>
                             <div class="tab-pane container fade bible" id="Bible">
-                                <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0" class="bible-iframe" style="width: inherit;"></iframe>
+                                <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe" style="width: inherit;"></iframe>
                             </div>
                             <div class="tab-pane container schedule fade" id="schedule">
-                                <div>
+                                <div>  
                                     <div class="live-schedule">
                                         <h5>Sunday Service</h5>
                                         <div class="live-schedule-card">
-                                            <div class="live-schedule-content">
-                                                <div class="live-schedule-time" style="margin-top:10px;">6:30pm</div>
-                                            </div>
+                                        <div class="live-schedule-content">
+                                            <div class="live-schedule-time" style="margin-top:10px;">6:30pm</div>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="live-schedule">
                                         <h5>Wednessday Service</h5>
                                         <div class="live-schedule-card">
-                                            <div class="live-schedule-content">
-                                                <div class="live-schedule-time">9:00am</div>
-                                                <small>Couch Session</small>
-                                            </div>
+                                        <div class="live-schedule-content">
+                                            <div class="live-schedule-time">9:00am</div>
+                                            <small >Couch Session</small>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="live-schedule">
                                         <h5>Saturday Service</h5>
                                         <div class="live-schedule-card">
-                                            <div class="live-schedule-content">
-                                                <div class="live-schedule-time">6:00pm</div>
-                                                <small>Worship café</small>
-                                            </div>
+                                        <div class="live-schedule-content">
+                                            <div class="live-schedule-time">6:00pm</div>
+                                            <small >Worship café</small>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -193,85 +199,6 @@
                 </div>
             </section>
         </main>
-
-        <div class="row hidden-lg hidden xl">
-            <div class="col-xs-12 col-md-12">
-                <div class="live-video embed-responsive">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7v4s2PY97FE?rel=0" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscren></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-12 ">
-                <div class="petra-nav">
-                    <ul class="nav nav-pills" style='background-color: rgb(246, 246, 246); padding-top: 0px; padding-bottom: 0px;  overflow-x: auto'>
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#chat-mobile">Chat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#note-mobile">NOTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#Bible-mobile">BIBLE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#schedule-mobile">SCHEDULE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#petra-modal" href="#">JOIN</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade chat container active show" id="chat-mobile">
-                            <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div>
-                            <script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
-                        </div>
-                        <div class="tab-pane container fade note" id="note-mobile">
-                            <!-- <div class="pro-text " style="overflow: auto; height: 90%;"> -->
-                            <h4>The Gift of Peace.</h4>
-                            <h5 class="text-muted">Ministering:<strong> Pastor Ayo Ajani</strong></h5>
-                            <p class="text-muted">29 March, 2020</p>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea quod asperiores sed repellat dolore, lor Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex totam amet blanditiis, illum odit laboriosam quos sapiente laborum voluptas omnis beatae perferendis aliquid deleniti vero. Ut dolor unde minima neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, doloremque fugit ab dolores nobis ex dignissimos id pariatur sint sed ullam expedita nulla beatae amet, libero illo? Cumque, eos quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia, minima exercitationem? Consectetur asperiores ipsam doloribus libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. Consectetur explicabo voluptates numquam est aperiam debitis veniam maxime inventore vel sequi, earum et quia. The END!!!
-                            </p>
-                            <!-- </div> -->
-                        </div>
-                        <div class="tab-pane container fade bible" id="Bible-mobile">
-                            <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0" class="bible-iframe" style="width: inherit;"></iframe>
-                        </div>
-                        <div class="tab-pane container schedule fade" id="schedule-mobile">
-                            <div>
-                                <div class="live-schedule">
-                                    <h5>Sunday Service</h5>
-                                    <div class="live-schedule-card">
-                                        <div class="live-schedule-content">
-                                            <div class="live-schedule-time" style="margin-top:10px;">6:30pm</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="live-schedule">
-                                    <h5>Wednessday Service</h5>
-                                    <div class="live-schedule-card">
-                                        <div class="live-schedule-content">
-                                            <div class="live-schedule-time">9:00am</div>
-                                            <small>Couch Session</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="live-schedule">
-                                    <h5>Saturday Service</h5>
-                                    <div class="live-schedule-card">
-                                        <div class="live-schedule-content">
-                                            <div class="live-schedule-time">6:00pm</div>
-                                            <small>Worship café</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="modal fade" id="petra-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered " role="document">
