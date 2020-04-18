@@ -41,7 +41,7 @@
 
         <main>
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark hidden-sm hidden-md hidden-xs">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <a class="navbar-brand" href="#">
                     <img class="light-logo ml-3" src="assets/img/logo/logo.png" alt="" width="55" height="55" />
                 </a>
