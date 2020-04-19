@@ -179,8 +179,9 @@
 
         .chat-iframe {
             width: 100%;
-                    display: flex;
-                    border: none;
+            display: flex;
+            border: none;
+            height: 100%;
         }
 
         @media only screen and (max-width: 400px) {
@@ -417,6 +418,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/swal.min.js"></script>
         <script>
+
+            $(window).load(function ()
+            {
+                var $contents = $('.chat-iframe').contents();
+                $contents.scrollTop($contents.height());
+            });
             $(document).ready(function() {
                 $('.spinning').toggle();
                 $("#getting-started").countdown("2020/3/22 09:00:00", function(event) {
