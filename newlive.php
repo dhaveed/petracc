@@ -253,9 +253,9 @@
                                             <li class="nav-item">
                                                 <a class="nav-link active " data-toggle="pill" href="#chat">Chat</a>
                                             </li>
-                                            <li class="nav-item">
+                                            <!-- <li class="nav-item">
                                                 <a class="nav-link" data-toggle="pill" href="#note">NOTE</a>
-                                            </li>
+                                            </li> -->
                                             <li class="nav-item">
                                                 <a class="nav-link " data-toggle="pill" href="#Bible">BIBLE</a>
                                             </li>
@@ -268,9 +268,10 @@
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane container " id="chat">
-                                                <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script>
+                                                <!-- <div id="arena-chat" data-publisher="petra-christian-center" data-chatroom="55ut" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=petra-christian-center&e=55ut"></script> -->
+                                                <iframe src='https://go.arena.im/embed/chat/petra-christian-center/petra-christian-center-global' class="chat-iframe"></iframe>
                                             </div>
-                                            <div class="tab-pane container fade note" id="note">
+                                            <!-- <div class="tab-pane container fade note" id="note">
                                                 <div class="pro-text ">
                                                     <h4 >The Gift of Peace.</h4>
                                                     <h5 class="text-muted" >Ministering:<strong> Pastor Ayo Ajani</strong></h5>
@@ -283,7 +284,7 @@
                                                         <br> The End!!!!
                                                     </p>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="tab-pane container fade bible" id="Bible">
                                                 <iframe title="bible" src="https://chop.bible.com/en/bible/111/GEN.1.niv" frameborder="0"  class="bible-iframe" style="width: inherit;"></iframe>
                                             </div>
