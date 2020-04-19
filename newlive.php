@@ -430,6 +430,13 @@
                 var $contents = $('.chat-iframe').contents();
                 $contents.scrollTop($contents.height());
             });
+
+            $(function ()
+{
+  var $mydiv = $('#chat');
+  $mydiv.scrollTop($mydiv.height());
+});
+
             $(document).ready(function() {
                 $('.spinning').toggle();
                 $("#getting-started").countdown("2020/3/22 09:00:00", function(event) {
