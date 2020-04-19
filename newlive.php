@@ -177,6 +177,12 @@
             line-height: 30px;
         }
 
+        .chat-iframe {
+            width: 100%;
+                    display: flex;
+                    border: none;
+        }
+
         @media only screen and (max-width: 400px) {
             .navbar-collapse ul li {
                 text-align: center;
