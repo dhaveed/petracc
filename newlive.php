@@ -207,7 +207,7 @@
 
             @media only screen and (max-width : 414px){
                 .chat-iframe{
-                    height: 45vh; 
+                    height: 40vh; 
                 }
             }
     </style>
