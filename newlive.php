@@ -204,6 +204,12 @@
                     border: none;
                 }
             }
+
+            @media only screen and (max-width : 414px){
+                .chat-iframe{
+                    height: 45vh; 
+                }
+            }
     </style>
     
     <body style="overflow:hidden;">
