@@ -185,6 +185,18 @@
                 height: 10%;  
                 } */
             }
+
+            @media only screen and (min-width: 769px){
+                .tab-content, .bible-iframe {
+                    height: 85vh;
+                }
+                .chat-iframe {
+                    height: 85vh;
+                    width: 100%;
+                    display: flex;
+                    border: none;
+                }
+            }
     </style>
     
     <body style="overflow:hidden;">
