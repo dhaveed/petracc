@@ -55,7 +55,7 @@
             <header>
                 <div class="header-single-post" data-dsn-header="project">
                     <div class="post-parallax-wrapper" data-overlay="3">
-                        <img id="dsn-hero-parallax-img" class="w-100 has-top-bottom" src="../assets/img/kids-1.jpg" >
+                        <img id="dsn-hero-parallax-img" class="w-100 has-top-bottom" src="../assets/img/kids-1.png" >
                     </div>
                     <div class="container">
 
