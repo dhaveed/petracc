@@ -63,6 +63,22 @@
                     <div class="container">
 
                     <div class="row social-groups-row">
+
+                    <div class="col-12 kids-week">
+                        <div class="kcard" style="background-image: url('./assets/img/kids-1.png')">
+                            <div class="content">
+                                <h2 class="ktitle" style="text-align: left;">
+                                Church at home: Treehouse & Rock Town - 17th May, 2020
+                                </h2>
+                                <p class="copy" style="font-size: 18px;">
+                                    <!-- David was in hiding when he wrote this psalm. Can you think of a time when you were tempted to hide because of trouble?... -->
+                                </p>
+                                <a href="./tpk/17-may-2020" class="btn">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                         <div class="col-12 kids-week">
                             <div class="kcard" style="background-image: url('./assets/img/risen.jpg')">
                                 <div class="content">
