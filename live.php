@@ -210,7 +210,7 @@
                             <div class="row justify-content-center align-items-center h-1">
                                 <div class="project-title" id="dsn-hero-parallax-title">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/GFiwfCVvpm0?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+                                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/FA1sqW1WEqU?autoplay=1&enablejsapi=1&disablekb=1&controls=0&showinfo=0&loop=1&modestbranding=1" id="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
                                     </div>                                
                                 </div>                                
                             </div>
@@ -223,7 +223,7 @@
                                                 <h4  style="color: #fff;">Don't Curse The Darkness</h4>
                                                 <br>
                                                 <h5 class="text-muted" ><!--Ministering:--><strong> Pastor Adeola Ajani </strong></h5>
-                                                <p class="mt-5 text-muted">24th May, 2020</p>
+                                                <p class="mt-5 text-muted">31st May, 2020</p>
                                             </div>
                                         </div>
 
